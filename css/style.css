@@ -28,4 +28,6 @@ nav { background-color: black; }
 .hero-btn { width: 194px; height: 45px; background-color: #b88b58; border: none; border-radius: 25px; color: white; font-weight: 700; font-size: 12px; text-transform: uppercase; transition: all 0.4s linear; }
 
 .hero-btn:hover { cursor: pointer; transform: scale(1.1); box-shadow: 0 0 6px black; }
+
+.carousel-circle { width: 15px; height: 15px; border-radius: 50%; border: 1px solid #b88b58; }
 /*# sourceMappingURL=style.css.map */

@@ -128,3 +128,10 @@ nav {
 .hero-btn {
   @include btn-norm();
 }
+
+.carousel-circle {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  border: 1px solid $brown;
+}
