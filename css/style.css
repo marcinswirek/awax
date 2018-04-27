@@ -1,0 +1,31 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat|PT+Sans|Quicksand");
+* { box-sizing: border-box; }
+
+body { font-family: "Montserrat", sans-serif; margin: 0 auto; }
+
+.container { max-width: 1100px; margin: 0 auto; }
+
+nav { background-color: black; }
+
+.nav-menu { display: -ms-flexbox; display: flex; -ms-flex-align: center; align-items: center; -ms-flex-pack: justify; justify-content: space-between; }
+
+.menu-list { display: -ms-flexbox; display: flex; list-style-type: none; font-size: 14px; text-transform: uppercase; font-weight: 700; }
+
+.menu-item { line-height: 90px; margin-left: 15px; }
+
+.menu-item > a { text-decoration: none; color: white; }
+
+.hero { height: 87.6vh; background-image: url("/images/hero.jpg"); background-position: center; background-repeat: no-repeat; background-size: cover; display: -ms-flexbox; display: flex; -ms-flex-direction: column; flex-direction: column; -ms-flex-align: center; align-items: center; -ms-flex-pack: center; justify-content: center; }
+
+.hero-header { font-size: 72px; text-transform: uppercase; font-weight: bold; margin: 0 auto; }
+
+.hero-header-one { color: white; }
+
+.hero-header-two { color: #b88b58; }
+
+.hero-phone { color: white; font-size: 24px; }
+
+.hero-btn { width: 194px; height: 45px; background-color: #b88b58; border: none; border-radius: 25px; color: white; font-weight: 700; font-size: 12px; text-transform: uppercase; transition: all 0.4s linear; }
+
+.hero-btn:hover { cursor: pointer; transform: scale(1.1); box-shadow: 0 0 6px black; }
+/*# sourceMappingURL=style.css.map */
