@@ -1,21 +1,25 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat|PT+Sans|Quicksand");
-* { box-sizing: border-box; border: 0.2px solid red; }
+* { box-sizing: border-box; }
 
 body { font-family: "Montserrat", sans-serif; margin: 0 auto; }
 
 .container { max-width: 1100px; margin: 0 auto; }
 
-nav { background-color: black; }
+nav { background-color: black; height: 90px; }
 
 .nav-menu { display: -ms-flexbox; display: flex; -ms-flex-align: center; align-items: center; -ms-flex-pack: justify; justify-content: space-between; }
 
 .menu-list { display: -ms-flexbox; display: flex; list-style-type: none; font-size: 14px; text-transform: uppercase; font-weight: 700; }
 
-.menu-item { line-height: 90px; margin-left: 15px; }
+.menu-item { margin-left: 15px; margin-top: 25px; text-align: center; }
+
+.menu-item:after { content: ""; border: 5px solid #b88b58; display: inline-block; vertical-align: bottom; width: 85%; margin-top: 22px; visibility: hidden; }
+
+.menu-item:hover:after { visibility: visible; }
 
 .menu-item > a { text-decoration: none; color: white; }
 
-.hero { height: 87.6vh; background-image: url("/images/hero.jpg"); background-position: center; background-repeat: no-repeat; background-size: cover; display: -ms-flexbox; display: flex; -ms-flex-direction: column; flex-direction: column; -ms-flex-align: center; align-items: center; -ms-flex-pack: center; justify-content: center; }
+.hero { height: 90.5vh; background-image: url("/images/hero.jpg"); background-position: center; background-repeat: no-repeat; background-size: cover; display: -ms-flexbox; display: flex; -ms-flex-direction: column; flex-direction: column; -ms-flex-align: center; align-items: center; -ms-flex-pack: center; justify-content: center; }
 
 .hero-header { font-size: 72px; text-transform: uppercase; font-weight: bold; margin: 0 auto; }
 
@@ -39,13 +43,15 @@ nav { background-color: black; }
 
 .fa-phone-hero { color: white; font-size: 48px; }
 
-.about { height: 530px; }
+.about { height: 450px; }
 
 .about-header, .about-sub-header { text-align: center; text-transform: uppercase; }
 
 .about-header { font-size: 30px; font-weight: bolder; margin-top: 63px; }
 
 .about-sub-header { font-size: 14px; color: #aeaeae; }
+
+.about-header-container { padding-bottom: 55px; }
 
 .about-text-container { width: 57%; }
 
@@ -57,9 +63,27 @@ nav { background-color: black; }
 
 .about-video-container { background-image: url("/images/video1.jpg"); background-position: center; background-size: cover; background-repeat: no-repeat; width: 37%; display: -ms-flexbox; display: flex; -ms-flex-pack: center; justify-content: center; -ms-flex-align: center; align-items: center; box-shadow: 0 0 20px black; margin: 0 auto; }
 
-.video-text-container { display: -ms-flexbox; display: flex; }
+.video-text-container { display: -ms-flexbox; display: flex; margin-bottom: 90px; }
 
 .fa-about { color: white; font-size: 72px; }
 
 .video-text { font-size: 30px; color: white; text-transform: uppercase; }
+
+.services { background-color: black; }
+
+.services-header, .services-sub-header { text-align: center; text-transform: uppercase; }
+
+.services-header { font-size: 30px; margin-bottom: 0; padding-top: 60px; color: white; }
+
+.services-sub-header { font-size: 14px; color: #aeaeae; }
+
+.services-grid { display: -ms-grid; display: grid; -ms-grid-columns: auto auto auto auto; grid-template-columns: auto auto auto auto; padding-top: 60px; }
+
+.services-grid-header { color: white; font-size: 18px; text-transform: uppercase; font-weight: 900; }
+
+.services-grid-text { color: #bebebe; font-size: 12px; font-weight: 100; }
+
+.services-grid-item { text-align: center; padding-bottom: 80px; border-left: 2px solid #bebebe; }
+
+.services-grid-item:nth-child(4) { border-right: 2px solid #bebebe; }
 /*# sourceMappingURL=style.css.map */

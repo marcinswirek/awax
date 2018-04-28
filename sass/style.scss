@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat|PT+Sans|Quicksand");
 
-//variables
+//Variables SASS
 $font-size-xs: 12px;
 $font-size-s: 14px;
 $font-size-m: 18px;
@@ -13,6 +13,8 @@ $white: white;
 $black: black;
 $light-grey: #aeaeae;
 $dark-grey: #373737;
+$grey: #bebebe;
+$grid-col-4: auto auto auto auto;
 
 @mixin btn-norm {
   width: 194px;
@@ -37,7 +39,7 @@ $dark-grey: #373737;
 
 * {
   box-sizing: border-box;
-  border: 0.2px solid red;
+  //border: 0.2px solid red;
 }
 
 body {
@@ -54,6 +56,7 @@ body {
 
 nav {
   background-color: $black;
+  height: 90px;
 }
 
 .nav-menu {
@@ -71,19 +74,25 @@ nav {
 }
 
 .menu-item {
-  line-height: 90px;
+  //line-height: 90px;
   margin-left: 15px;
+  margin-top: 25px;
+  text-align: center;
+  &:after {
+    content: "";
+    border: 5px solid $brown;
+    display: inline-block;
+    vertical-align: bottom;
+    width: 85%;
+    margin-top: 22px;
+    visibility: hidden;
+  }
 
-  //   &:hover {
-  //     &:after {
-  //       content: "";
-  //       border: 5px solid $brown;
-  //       display: inline-block;
-  //       vertical-align: bottom;
-  //       width: 100%;
-  //       margin-top: 10px;
-  //     }
-  //   }
+  &:hover {
+    &:after {
+      visibility: visible;
+    }
+  }
 
   > a {
     text-decoration: none;
@@ -94,7 +103,7 @@ nav {
 // Hero section
 
 .hero {
-  height: 87.6vh;
+  height: 90.5vh;
   background-image: url("/images/hero.jpg");
   background-position: center;
   background-repeat: no-repeat;
@@ -169,7 +178,7 @@ nav {
 // About section
 
 .about {
-  height: 530px;
+  height: 450px;
 }
 
 .about-header,
@@ -187,6 +196,10 @@ nav {
 .about-sub-header {
   font-size: $font-size-s;
   color: $light-grey;
+}
+
+.about-header-container {
+    padding-bottom: 55px;
 }
 
 .about-text-container {
@@ -217,6 +230,7 @@ nav {
 
 .video-text-container {
   display: flex;
+  margin-bottom: 90px;
 }
 
 .fa-about {
@@ -229,3 +243,59 @@ nav {
   color: $white;
   text-transform: uppercase;
 }
+
+// Services section
+
+.services {
+  background-color: $black;
+}
+
+.services-header,
+.services-sub-header {
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.services-header {
+  font-size: $font-size-xl;
+  margin-bottom: 0;
+  padding-top: 60px;
+  color: $white;
+}
+
+.services-sub-header {
+  font-size: $font-size-s;
+  color: $light-grey;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: $grid-col-4;
+  padding-top: 60px;
+}
+
+.services-grid-header {
+  color: $white;
+  font-size: $font-size-m;
+  text-transform: uppercase;
+  font-weight: 900;
+}
+
+.services-grid-text {
+  color: $grey;
+  font-size: $font-size-xs;
+  font-weight: 100;
+}
+
+.services-grid-item {
+  text-align: center;
+  padding-bottom: 80px;
+  border-left: 2px solid $grey;
+  &:nth-child(4) {
+    border-right: 2px solid $grey;
+  }
+}
+
+// Projects section
+
+
