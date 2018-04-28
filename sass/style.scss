@@ -199,7 +199,7 @@ nav {
 }
 
 .about-header-container {
-    padding-bottom: 55px;
+  padding-bottom: 55px;
 }
 
 .about-text-container {
@@ -288,14 +288,60 @@ nav {
 }
 
 .services-grid-item {
+  margin-bottom: 60px;
   text-align: center;
-  padding-bottom: 80px;
-  border-left: 2px solid $grey;
+  padding-bottom: 30px;
+  border-left: 2px solid $dark-grey;
   &:nth-child(4) {
-    border-right: 2px solid $grey;
+    border-right: 2px solid $dark-grey;
   }
 }
 
 // Projects section
 
+.projects-header,
+.projects-sub-header {
+  text-align: center;
+}
 
+.projects-header {
+  color: $black;
+  font-size: $font-size-xl;
+  text-transform: uppercase;
+  font-weight: 900;
+  padding-top: 60px;
+}
+
+.projects-sub-header {
+  color: $light-grey;
+  font-size: $font-size-s;
+  text-transform: uppercase;
+}
+
+.projects-menu-list {
+  display: flex;
+  align-items: center;
+  list-style-type: none;
+  text-align: center;
+  border: 1px solid $grey;
+  border-radius: 30px;
+}
+
+.projects-menu-item {
+  margin-right: 35px;
+  display: flex;
+
+  > a {
+    text-decoration: none;
+    color: $black;
+    text-transform: uppercase;
+    font-size: $font-size-s;
+    line-height: 55px;
+    text-align: center;
+  }
+}
+
+.projects-menu {
+  display: flex;
+  justify-content: center;
+}
