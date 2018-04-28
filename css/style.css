@@ -29,5 +29,35 @@ nav { background-color: black; }
 
 .hero-btn:hover { cursor: pointer; transform: scale(1.1); box-shadow: 0 0 6px black; }
 
-.carousel-circle { width: 15px; height: 15px; border-radius: 50%; border: 1px solid #b88b58; }
+.hero-carousel-circle { width: 15px; height: 15px; border-radius: 50%; border: 3px solid #b88b58; margin: 8px; }
+
+.carousel-circle-active { background-color: #b88b58; }
+
+.hero-carousel-circles { display: -ms-flexbox; display: flex; position: absolute; bottom: 4vh; }
+
+.hero-phone-btn { height: 65px; width: 65px; border: none; border-radius: 50%; background-color: #b88b58; color: white; transform: rotate(-45deg); position: absolute; bottom: -32px; right: 5vw; box-shadow: 0 0 20px black; }
+
+.fa-phone-hero { color: white; font-size: 48px; }
+
+.about { height: 530px; }
+
+.about-header, .about-sub-header { text-align: center; text-transform: uppercase; }
+
+.about-header { font-size: 30px; font-weight: bolder; margin-top: 63px; }
+
+.about-sub-header { font-size: 14px; color: #aeaeae; }
+
+.about-text-container { width: 57%; }
+
+.about-btn { width: 194px; height: 45px; background-color: #b88b58; border: none; border-radius: 25px; color: white; font-weight: 700; font-size: 12px; text-transform: uppercase; transition: all 0.4s linear; margin-top: 34px; }
+
+.about-btn:hover { cursor: pointer; transform: scale(1.1); box-shadow: 0 0 6px black; }
+
+.about-video-container { background-image: url("/images/video1.jpg"); background-position: center; background-size: cover; background-repeat: no-repeat; width: 37%; display: -ms-flexbox; display: flex; -ms-flex-pack: center; justify-content: center; -ms-flex-align: center; align-items: center; box-shadow: 0 0 20px black; margin-left: 20px; }
+
+.video-text-container { display: -ms-flexbox; display: flex; }
+
+.fa-about { color: white; font-size: 72px; }
+
+.video-text { font-size: 30px; color: white; text-transform: uppercase; }
 /*# sourceMappingURL=style.css.map */

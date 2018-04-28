@@ -129,9 +129,99 @@ nav {
   @include btn-norm();
 }
 
-.carousel-circle {
+.hero-carousel-circle {
   width: 15px;
   height: 15px;
   border-radius: 50%;
-  border: 1px solid $brown;
+  border: 3px solid $brown;
+  margin: 8px;
+}
+
+.carousel-circle-active {
+  background-color: $brown;
+}
+
+.hero-carousel-circles {
+  display: flex;
+  position: absolute;
+  bottom: 4vh;
+}
+
+.hero-phone-btn {
+  height: 65px;
+  width: 65px;
+  border: none;
+  border-radius: 50%;
+  background-color: $brown;
+  color: $white;
+  transform: rotate(-45deg);
+  position: absolute;
+  bottom: -32px;
+  right: 5vw;
+  box-shadow: 0 0 20px black;
+}
+
+.fa-phone-hero {
+  color: $white;
+  font-size: $font-size-xxl;
+}
+
+// About section
+
+.about {
+  height: 530px;
+}
+
+.about-header,
+.about-sub-header {
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.about-header {
+  font-size: $font-size-xl;
+  font-weight: bolder;
+  margin-top: 63px;
+}
+
+.about-sub-header {
+  font-size: $font-size-s;
+  color: $light-grey;
+}
+
+.about-text-container {
+  width: 57%;
+}
+
+.about-btn {
+  @include btn-norm();
+  margin-top: 34px;
+}
+
+.about-video-container {
+  background-image: url("/images/video1.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 37%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 0 20px black;
+  margin-left: 20px;
+}
+
+.video-text-container {
+  display: flex;
+}
+
+.fa-about {
+  color: $white;
+  font-size: $font-size-xxxl;
+}
+
+.video-text {
+  font-size: $font-size-xl;
+  color: $white;
+  text-transform: uppercase;
 }
