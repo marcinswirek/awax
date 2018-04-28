@@ -37,7 +37,7 @@ $dark-grey: #373737;
 
 * {
   box-sizing: border-box;
-  //border: 0.2px solid red;
+  border: 0.2px solid red;
 }
 
 body {
@@ -198,6 +198,10 @@ nav {
   margin-top: 34px;
 }
 
+.about-paragraph {
+  margin-top: 0;
+}
+
 .about-video-container {
   background-image: url("/images/video1.jpg");
   background-position: center;
@@ -208,7 +212,7 @@ nav {
   justify-content: center;
   align-items: center;
   box-shadow: 0 0 20px black;
-  margin-left: 20px;
+  margin: 0 auto;
 }
 
 .video-text-container {
