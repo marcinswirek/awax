@@ -370,7 +370,6 @@ nav {
 
 .projects-gallery-item {
   padding: 30.5px 5.5px;
-  background-image: url("/images/img1.jpg");
   background-size: contain;
   background-repeat: no-repeat;
   transition: all 0.4s linear;
@@ -385,6 +384,53 @@ nav {
   }
 }
 
+.gallery-item-1 {
+  background-image: url("/images/img1.jpg");
+}
+
+.gallery-item-2 {
+  background-image: url("/images/img8.jpg");
+}
+
+.gallery-item-3 {
+  background-image: url("/images/img3.jpg");
+}
+
+.gallery-item-4 {
+  background-image: url("/images/img4.jpg");
+}
+
+.gallery-item-5 {
+  background-image: url("/images/img5.jpg");
+}
+
+.gallery-item-6 {
+  background-image: url("/images/img6.jpg");
+}
+
+.gallery-item-7 {
+  background-image: url("/images/img7.jpg");
+}
+
+.gallery-item-8 {
+  background-image: url("/images/img8.jpg");
+}
+
+.gallery-item-9 {
+  background-image: url("/images/img9.jpg");
+}
+
+.gallery-item-10 {
+  background-image: url("/images/img10.jpg");
+}
+
+.gallery-item-11 {
+  background-image: url("/images/img11.jpg");
+}
+
+.gallery-item-12 {
+  background-image: url("/images/img12.jpg");
+}
 .projects-btn {
   @include btn-norm();
 }
@@ -410,4 +456,12 @@ nav {
 .projects-gallery-layer {
   visibility: hidden;
   transition: all 0.4s linear;
+}
+
+// Team section
+
+.team {
+  background-image: url("/images/team-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
