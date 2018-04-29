@@ -165,7 +165,7 @@ nav {
   color: $white;
   transform: rotate(-45deg);
   position: absolute;
-  bottom: -32px;
+  bottom: -6vh;
   right: 5vw;
   box-shadow: 0 0 20px black;
 }
@@ -336,12 +336,52 @@ nav {
     color: $black;
     text-transform: uppercase;
     font-size: $font-size-s;
-    line-height: 55px;
+    line-height: 50px;
     text-align: center;
+
+    &:after {
+        content: "";
+        border: 3px solid $brown;
+        display: block;
+        visibility: hidden;  
+    }
+
+    &:hover {
+        &:after {
+            visibility: visible;
+        }
+
+    }
   }
 }
 
 .projects-menu {
   display: flex;
   justify-content: center;
+  padding-top: 54px;
+  padding-bottom: 38px;
 }
+
+.projects-gallery-grid {
+    display: grid;
+    grid-template-columns: auto auto auto auto; 
+    grid-gap: 30px;
+    padding-bottom: 30px;
+}
+
+.projects-gallery-item {
+    padding: 82.5px 125.5px;
+    background-image: url("/images/img1.jpg");
+}
+
+.projects-btn {
+    @include btn-norm();
+}
+
+.projects-btn-container {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 58px;
+}
+
+

@@ -39,7 +39,7 @@ nav { background-color: black; height: 90px; }
 
 .hero-carousel-circles { display: -ms-flexbox; display: flex; position: absolute; bottom: 4vh; }
 
-.hero-phone-btn { height: 65px; width: 65px; border: none; border-radius: 50%; background-color: #b88b58; color: white; transform: rotate(-45deg); position: absolute; bottom: -32px; right: 5vw; box-shadow: 0 0 20px black; }
+.hero-phone-btn { height: 65px; width: 65px; border: none; border-radius: 50%; background-color: #b88b58; color: white; transform: rotate(-45deg); position: absolute; bottom: -6vh; right: 5vw; box-shadow: 0 0 20px black; }
 
 .fa-phone-hero { color: white; font-size: 48px; }
 
@@ -97,7 +97,21 @@ nav { background-color: black; height: 90px; }
 
 .projects-menu-item { margin-right: 35px; display: -ms-flexbox; display: flex; }
 
-.projects-menu-item > a { text-decoration: none; color: black; text-transform: uppercase; font-size: 14px; line-height: 55px; text-align: center; }
+.projects-menu-item > a { text-decoration: none; color: black; text-transform: uppercase; font-size: 14px; line-height: 50px; text-align: center; }
 
-.projects-menu { display: -ms-flexbox; display: flex; -ms-flex-pack: center; justify-content: center; }
+.projects-menu-item > a:after { content: ""; border: 3px solid #b88b58; display: block; visibility: hidden; }
+
+.projects-menu-item > a:hover:after { visibility: visible; }
+
+.projects-menu { display: -ms-flexbox; display: flex; -ms-flex-pack: center; justify-content: center; padding-top: 54px; padding-bottom: 38px; }
+
+.projects-gallery-grid { display: -ms-grid; display: grid; -ms-grid-columns: auto auto auto auto; grid-template-columns: auto auto auto auto; grid-gap: 30px; padding-bottom: 30px; }
+
+.projects-gallery-item { padding: 82.5px 125.5px; background-image: url("/images/img1.jpg"); }
+
+.projects-btn { width: 194px; height: 45px; background-color: #b88b58; border: none; border-radius: 25px; color: white; font-weight: 700; font-size: 12px; text-transform: uppercase; transition: all 0.4s linear; }
+
+.projects-btn:hover { cursor: pointer; transform: scale(1.1); box-shadow: 0 0 6px black; }
+
+.projects-btn-container { display: -ms-flexbox; display: flex; -ms-flex-pack: center; justify-content: center; padding-bottom: 58px; }
 /*# sourceMappingURL=style.css.map */
