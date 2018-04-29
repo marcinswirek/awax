@@ -107,7 +107,7 @@ nav { background-color: black; height: 90px; }
 
 .projects-gallery-grid { display: -ms-grid; display: grid; -ms-grid-columns: auto auto auto auto; grid-template-columns: auto auto auto auto; grid-gap: 30px; padding-bottom: 30px; }
 
-.projects-gallery-item { padding: 30.5px 5.5px; background-image: url("/images/img1.jpg"); background-size: contain; background-repeat: no-repeat; }
+.projects-gallery-item { padding: 30.5px 5.5px; background-image: url("/images/img1.jpg"); background-size: contain; background-repeat: no-repeat; transition: all 0.4s linear; }
 
 .projects-gallery-item:hover { -webkit-filter: brightness(50%); filter: brightness(50%); }
 
@@ -123,5 +123,5 @@ nav { background-color: black; height: 90px; }
 
 .gallery-layer-text { font-size: 12px; text-align: center; color: white; }
 
-.projects-gallery-layer { visibility: hidden; }
+.projects-gallery-layer { visibility: hidden; transition: all 0.4s linear; }
 /*# sourceMappingURL=style.css.map */

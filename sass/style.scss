@@ -373,6 +373,7 @@ nav {
   background-image: url("/images/img1.jpg");
   background-size: contain;
   background-repeat: no-repeat;
+  transition: all 0.4s linear;
   &:hover {
     filter: brightness(50%);
   }
@@ -408,4 +409,5 @@ nav {
 
 .projects-gallery-layer {
   visibility: hidden;
+  transition: all 0.4s linear;
 }
