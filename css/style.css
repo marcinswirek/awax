@@ -43,11 +43,11 @@ nav { background-color: black; height: 90px; }
 
 .fa-phone-hero { color: white; font-size: 48px; }
 
-.about { height: 450px; }
+.about { background-color: #F0F0F0; }
 
 .about-header, .about-sub-header { text-align: center; text-transform: uppercase; }
 
-.about-header { font-size: 30px; font-weight: bolder; margin-top: 63px; }
+.about-header { font-size: 30px; font-weight: bolder; padding-top: 63px; margin-top: 0; }
 
 .about-sub-header { font-size: 14px; color: #aeaeae; }
 
@@ -63,7 +63,7 @@ nav { background-color: black; height: 90px; }
 
 .about-video-container { background-image: url("/images/video1.jpg"); background-position: center; background-size: cover; background-repeat: no-repeat; width: 37%; display: -ms-flexbox; display: flex; -ms-flex-pack: center; justify-content: center; -ms-flex-align: center; align-items: center; box-shadow: 0 0 20px black; margin: 0 auto; }
 
-.video-text-container { display: -ms-flexbox; display: flex; margin-bottom: 90px; }
+.video-text-container { display: -ms-flexbox; display: flex; padding-bottom: 60px; }
 
 .fa-about { color: white; font-size: 72px; }
 
@@ -73,7 +73,7 @@ nav { background-color: black; height: 90px; }
 
 .services-header, .services-sub-header { text-align: center; text-transform: uppercase; }
 
-.services-header { font-size: 30px; margin-bottom: 0; padding-top: 60px; color: white; }
+.services-header { font-size: 30px; margin-bottom: 0; padding-top: 60px; color: white; margin-top: 0; }
 
 .services-sub-header { font-size: 14px; color: #aeaeae; }
 
@@ -87,9 +87,11 @@ nav { background-color: black; height: 90px; }
 
 .services-grid-item:nth-child(4) { border-right: 2px solid #373737; }
 
+.projects { background-color: #F0F0F0; }
+
 .projects-header, .projects-sub-header { text-align: center; }
 
-.projects-header { color: black; font-size: 30px; text-transform: uppercase; font-weight: 900; padding-top: 60px; }
+.projects-header { color: black; font-size: 30px; text-transform: uppercase; font-weight: 900; padding-top: 60px; margin-top: 0; }
 
 .projects-sub-header { color: #aeaeae; font-size: 14px; text-transform: uppercase; }
 
@@ -177,9 +179,9 @@ nav { background-color: black; height: 90px; }
 
 .team-carousel-circles { display: -ms-flexbox; display: flex; -ms-flex-pack: center; justify-content: center; padding-top: 50px; padding-bottom: 45px; }
 
-.clients { text-align: center; }
+.clients { text-align: center; background-color: #F0F0F0; }
 
-.clients-header { font-size: 30px; text-transform: uppercase; padding-top: 60px; font-weight: 700; }
+.clients-header { font-size: 30px; text-transform: uppercase; padding-top: 60px; font-weight: 700; margin-top: 0; }
 
 .clients-sub-header { font-size: 14px; color: #aeaeae; text-transform: uppercase; padding-bottom: 70px; }
 
@@ -192,4 +194,8 @@ nav { background-color: black; height: 90px; }
 .clients-description-text { width: 50%; margin: auto; font-size: 14px; color: #7e7e7e; }
 
 .clients-carousel-circles { display: -ms-flexbox; display: flex; -ms-flex-pack: center; justify-content: center; padding-top: 51px; padding-bottom: 42px; }
+
+.clients-logo { border-top: 1px solid #bebebe; border-bottom: 1px solid #bebebe; }
+
+.clients-logo-container { display: -ms-flexbox; display: flex; -ms-flex-pack: justify; justify-content: space-between; padding-top: 60px; padding-bottom: 50px; }
 /*# sourceMappingURL=style.css.map */
