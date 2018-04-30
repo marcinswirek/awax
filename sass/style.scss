@@ -14,6 +14,7 @@ $white: white;
 $black: black;
 $almost-black: #242424;
 $light-grey: #aeaeae;
+$medium-gray: #7e7e7e;
 $dark-grey: #373737;
 $grey: #bebebe;
 $grid-col-4: auto auto auto auto;
@@ -495,7 +496,6 @@ nav {
 
 .team-grid-item {
   background-color: $white;
-  //padding: 115px 75px;
 }
 
 .team-grid-img {
@@ -552,3 +552,57 @@ nav {
     padding-top: 50px;
     padding-bottom: 45px;
 }
+
+// Clients section
+
+.clients {
+    text-align: center;
+}
+
+.clients-header {
+    font-size: $font-size-xl;
+    text-transform: uppercase;
+    padding-top: 60px;
+    font-weight: 700;
+}
+
+.clients-sub-header {
+    font-size: $font-size-s;
+    color: $light-grey;
+    text-transform: uppercase;
+    padding-bottom: 70px;
+}
+
+.clients-img-header {
+    font-size: $font-size-l;
+    padding-top: 30px;
+}
+
+.clients-img-sub-header {
+    font-size: $font-size-m;
+}
+
+.clients-icon {
+    font-size: $font-size-xm;
+    color: $medium-gray;
+    padding-top: 30px;
+    padding-bottom: 18px;
+}
+
+.clients-description-text {
+    width: 50%;
+    margin: auto;
+    font-size: $font-size-s;
+    color: $medium-gray;
+}
+
+.clients-carousel-circles {
+    display: flex;
+    justify-content: center;
+    padding-top: 51px;
+    padding-bottom: 42px;
+}
+
+
+
+

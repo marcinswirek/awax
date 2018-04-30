@@ -176,4 +176,20 @@ nav { background-color: black; height: 90px; }
 .team-btn-container { margin: auto; width: 90%; display: -ms-flexbox; display: flex; -ms-flex-pack: center; justify-content: center; padding-top: 40px; padding-bottom: 40px; }
 
 .team-carousel-circles { display: -ms-flexbox; display: flex; -ms-flex-pack: center; justify-content: center; padding-top: 50px; padding-bottom: 45px; }
+
+.clients { text-align: center; }
+
+.clients-header { font-size: 30px; text-transform: uppercase; padding-top: 60px; font-weight: 700; }
+
+.clients-sub-header { font-size: 14px; color: #aeaeae; text-transform: uppercase; padding-bottom: 70px; }
+
+.clients-img-header { font-size: 24px; padding-top: 30px; }
+
+.clients-img-sub-header { font-size: 18px; }
+
+.clients-icon { font-size: 21px; color: #7e7e7e; padding-top: 30px; padding-bottom: 18px; }
+
+.clients-description-text { width: 50%; margin: auto; font-size: 14px; color: #7e7e7e; }
+
+.clients-carousel-circles { display: -ms-flexbox; display: flex; -ms-flex-pack: center; justify-content: center; padding-top: 51px; padding-bottom: 42px; }
 /*# sourceMappingURL=style.css.map */
