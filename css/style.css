@@ -215,9 +215,11 @@ nav { background-color: black; height: 90px; }
 
 .price-item-price-text { font-size: 10px; color: #aeaeae; text-transform: uppercase; margin-top: 4px; padding-bottom: 23px; }
 
-.price-item-offer { font-size: 10px; color: #7e7e7e; }
+.price-item-offer { font-size: 10px; color: -gray; }
 
-.price-item-offer:after { content: ""; border: 1px solid #bebebe; display: block; width: 5px; vertical-align: center; }
+.price-item-offer:after { content: ""; border: 1px solid #bebebe; display: block; width: 10px; margin: 3px auto 0px auto; }
+
+.price-item-offer:after:nth-child(5) { display: none; }
 
 .price-item-btn { width: 129px; height: 45px; background-color: #242424; border: none; border-radius: 25px; color: white; font-weight: 700; font-size: 12px; text-transform: uppercase; transition: all 0.4s linear; margin-bottom: 33px; margin-top: 28px; }
 
