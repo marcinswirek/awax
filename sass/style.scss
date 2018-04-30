@@ -652,6 +652,7 @@ nav {
 
 .price {
   background-color: $ivory;
+  border-bottom: 1px solid $grey;
 }
 
 .price-header {
@@ -667,7 +668,7 @@ nav {
   color: $light-grey;
   text-transform: uppercase;
   text-align: center;
-  //padding-bottom: 25px;
+  padding-bottom: 25px;
 }
 
 .price-grid {
@@ -691,14 +692,12 @@ nav {
   font-weight: 700;
   color: $almost-black;
   padding-top: 30px;
-  //padding-bottom: 5px;
 }
 
 .price-item-price {
   font-size: $font-size-xl;
   color: $almost-black;
   font-weight: bold;
-  //margin-bottom: auto;
   margin-top: 10px;
 }
 
@@ -706,22 +705,20 @@ nav {
   font-size: $font-size-xxs;
   color: $light-grey;
   text-transform: uppercase;
-  //margin-top: 4px;
-  //padding-bottom: -23px;
+  margin-top: -26px;
 }
 
 .price-item-offer {
   font-size: $font-size-xxs;
-  color: $dark-gray;
+  color: $dark-grey;
+  margin-bottom: 5px;
+  margin-top: 5px;
   &:after {
     content: "";
     border: 1px solid $dark-grey;
     display: block;
     width: 10px;
-    margin: 3px auto 0px auto;
-    &:nth-child(5) {
-      display: none;
-    }
+    margin: 5px auto 0px auto;
   }
 }
 
