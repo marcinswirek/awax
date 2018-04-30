@@ -377,11 +377,12 @@ nav {
   transition: all 0.4s linear;
   &:hover {
     filter: brightness(50%);
+    cursor: pointer;
   }
   &:hover {
     .projects-gallery-layer {
       visibility: visible;
-      cursor: default;
+      cursor: pointer;
     }
   }
 }
