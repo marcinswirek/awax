@@ -197,7 +197,7 @@ nav { background-color: black; height: 90px; }
 
 .clients-logo { border-top: 1px solid #bebebe; border-bottom: 1px solid #bebebe; }
 
-.clients-logo-container { display: -ms-flexbox; display: flex; -ms-flex-pack: justify; justify-content: space-between; padding-top: 60px; padding-bottom: 50px; }
+.clients-logo-container { display: -ms-flexbox; display: flex; -ms-flex-pack: justify; justify-content: space-between; -ms-flex-align: center; align-items: center; padding-top: 60px; padding-bottom: 50px; }
 
 .price { background-color: #f0f0f0; border-bottom: 1px solid #bebebe; }
 
