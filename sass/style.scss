@@ -4,6 +4,7 @@
 $font-size-xs: 12px;
 $font-size-s: 14px;
 $font-size-m: 18px;
+$font-size-xm: 21px;
 $font-size-l: 24px;
 $font-size-xl: 30px;
 $font-size-xxl: 48px;
@@ -11,6 +12,7 @@ $font-size-xxxl: 72px;
 $brown: #b88b58;
 $white: white;
 $black: black;
+$almost-black: #242424;
 $light-grey: #aeaeae;
 $dark-grey: #373737;
 $grey: #bebebe;
@@ -464,4 +466,88 @@ nav {
   background-image: url("/images/team-bg.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+.team-header-container {
+    text-align: center;
+    padding-top: 60px;
+    padding-bottom: 40px;
+}
+
+.team-header {
+   font-size: $font-size-xl;
+   text-transform: uppercase;
+   color: $white;
+}
+
+.team-sub-header {
+    color: $light-grey;
+    font-size: $font-size-s;
+    text-transform: uppercase;
+}
+
+.team-grid {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-gap: 30px;
+}
+
+.team-grid-item {
+  background-color: $white;
+  //padding: 115px 75px;
+}
+
+.team-grid-img {
+  padding: 45px 81px;
+}
+
+.team-img-header {
+  font-size: $font-size-xm;
+  text-transform: uppercase;
+  color: $almost-black;
+  text-align: center;
+  margin-top: -15px;
+  margin-bottom: 3px;
+}
+
+.team-img-sub-header {
+  font-size: $font-size-xs;
+  color: $almost-black;
+  text-align: center;
+  font-weight: 200;
+}
+
+.team-social-btn {
+  width: 33px;
+  height: 33px;
+  border: none;
+  border-radius: 50%;
+  margin: 0 auto;
+  background-color: $grey;
+  transition: all.4s linear;
+  &:hover {
+    background-color: $brown;
+    cursor: pointer;
+  }
+}
+
+.team-social-icon {
+  font-size: $font-size-s;
+  color: $white;
+}
+
+.team-btn-container {
+  margin: auto;
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.team-carousel-circles {
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+    padding-bottom: 45px;
 }
