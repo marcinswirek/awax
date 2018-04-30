@@ -728,68 +728,136 @@ nav {
   margin-top: 28px;
 }
 
-// Premium section
-
 .price-flex {
-    display: flex;
-    padding-bottom: 57px;
-    border-bottom: 1px solid $grey;
+  display: flex;
+  padding-bottom: 57px;
+  border-bottom: 1px solid $grey;
 }
 
+// Premium section
+
 .premium-header {
-    text-align: center;
-    font-size: $font-size-xl;
-    text-transform: uppercase;
-    font-weight: 700;
-    padding-top: 60px;
+  text-align: center;
+  font-size: $font-size-xl;
+  text-transform: uppercase;
+  font-weight: 700;
+  padding-top: 60px;
 }
 
 .premium-sub-header {
-    text-align: center;
-    font-size: $font-size-s;
-    color: $light-grey;
-    text-transform: uppercase;
-    margin-top: -10px;
-    padding-bottom: 40px;
+  text-align: center;
+  font-size: $font-size-s;
+  color: $light-grey;
+  text-transform: uppercase;
+  margin-top: -10px;
+  padding-bottom: 40px;
 }
 
 .fa-check-circle {
-    font-size: $font-size-xl;
-    color: $brown;
-    margin-right: 30px;
+  font-size: $font-size-xl;
+  color: $brown;
+  margin-right: 30px;
 }
 
 .premium-list-item {
-    font-size: $font-size-xm;
-    text-transform: uppercase;
-    font-weight: 700;
-    line-height: 50px;
+  font-size: $font-size-xm;
+  text-transform: uppercase;
+  font-weight: 700;
+  line-height: 50px;
 }
 
 .premium-list-text {
-    margin-left: 60px;
-    //margin-top: 10px;
-    line-height: 30px;
+  margin-left: 60px;
+  //margin-top: 10px;
+  line-height: 30px;
 }
 
 .premium-sub-list {
-    margin-left: 60px;
-    line-height: 30px;
-    text-transform: uppercase;
+  margin-left: 60px;
+  line-height: 30px;
+  text-transform: uppercase;
 }
 
 .premium-carousel-circles {
-    display: flex;
-    justify-content: center;
-    padding: 40px 0;
+  display: flex;
+  justify-content: center;
+  padding: 40px 0;
 }
 
 .premium-btn {
-    @include btn-norm();
+  @include btn-norm();
 }
 
 .premium-btn-container {
-    display: flex;
-    justify-content: center;
-    padding-bottom: 60px;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 60px;
+}
+
+// Facts section
+
+.facts {
+  background-color: $black;
+}
+
+.facts-grid {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-gap: 50px;
+}
+
+.facts-grid-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  //justify-content: space-evenly;
+}
+
+.facts-header {
+  font-size: $font-size-xl;
+  color: $white;
+  text-transform: uppercase;
+  font-weight: 700;
+  text-align: center;
+  padding-top: 60px;
+}
+
+.facts-sub-header {
+  font-size: $font-size-s;
+  color: $light-grey;
+  text-transform: uppercase;
+  text-align: center;
+  padding-bottom: 60px;
+}
+
+.facts-grid-number {
+  font-size: $font-size-xxl;
+  color: $brown;
+  font-weight: 900;
+  margin-top: 0;
+  margin-bottom: 10px;
+  &:after {
+    content: "";
+    border: 2px solid $medium-gray;
+    display: block;
+    width: 25px;
+    margin: 10px auto 0px auto;
+  }
+}
+
+.facts-grid-header {
+  font-size: $font-size-m;
+  color: $white;
+  text-transform: uppercase;
+  margin: auto;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.facts-grid-description {
+  font-size: $font-size-xs;
+  color: $medium-gray;
+  line-height: 30px;
+  margin-bottom: 81px;
+  text-align: center;
 }
