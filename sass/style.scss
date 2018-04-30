@@ -679,7 +679,6 @@ nav {
 
 .price-grid-item {
   background-color: $white;
-  //text-align: center;
   margin-bottom: 62px;
   display: flex;
   flex-direction: column;
@@ -726,4 +725,70 @@ nav {
   @include btn-md();
   margin-bottom: 33px;
   margin-top: 28px;
+}
+
+// Premium section
+
+.price-flex {
+    display: flex;
+    padding-bottom: 57px;
+    border-bottom: 1px solid $grey;
+}
+
+.premium-header {
+    text-align: center;
+    font-size: $font-size-xl;
+    text-transform: uppercase;
+    font-weight: 700;
+    padding-top: 60px;
+}
+
+.premium-sub-header {
+    text-align: center;
+    font-size: $font-size-s;
+    color: $light-grey;
+    text-transform: uppercase;
+    margin-top: -10px;
+    padding-bottom: 40px;
+}
+
+.fa-check-circle {
+    font-size: $font-size-xl;
+    color: $brown;
+    margin-right: 30px;
+}
+
+.premium-list-item {
+    font-size: $font-size-xm;
+    text-transform: uppercase;
+    font-weight: 700;
+    line-height: 50px;
+}
+
+.premium-list-text {
+    margin-left: 60px;
+    //margin-top: 10px;
+    line-height: 30px;
+}
+
+.premium-sub-list {
+    margin-left: 60px;
+    line-height: 30px;
+    text-transform: uppercase;
+}
+
+.premium-carousel-circles {
+    display: flex;
+    justify-content: center;
+    padding: 40px 0;
+}
+
+.premium-btn {
+    @include btn-norm();
+}
+
+.premium-btn-container {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 60px;
 }
