@@ -867,6 +867,7 @@ nav {
 .social {
   background-color: $ivory;
   border-bottom: 1px solid $grey;
+  padding-bottom: 0;
 }
 
 .social-flex {
@@ -937,11 +938,16 @@ nav {
 
 // Contact section
 
+.contact {
+  background-color: $ivory;
+}
+
 .contact-header {
   font-size: $font-size-xl;
   text-transform: uppercase;
   text-align: center;
   padding-top: 60px;
+  margin-top: 0;
 }
 
 .contact-sub-header {
@@ -978,6 +984,7 @@ nav {
   border: none;
   border-bottom: 2px solid $grey;
   width: 255px;
+  background-color: $ivory;
 }
 
 .contact-email {
@@ -985,6 +992,7 @@ nav {
   border-bottom: 2px solid $grey;
   width: 255px;
   margin-left: 30px;
+  background-color: $ivory;
 }
 
 .contact-subject {
@@ -992,6 +1000,7 @@ nav {
   border-bottom: 2px solid $grey;
   width: 540px;
   margin-bottom: 110px;
+  background-color: $ivory;
 }
 
 .contact-msg {
@@ -999,6 +1008,7 @@ nav {
   border-bottom: 2px solid $grey;
   width: 540px;
   margin-bottom: 52px;
+  background-color: $ivory;
 }
 
 .contact-submit-btn {
@@ -1006,4 +1016,48 @@ nav {
   margin-bottom: 75px;
 }
 
+// Map section
 
+.map {
+  background-image: url("/images/map.png");
+  background-repeat: none;
+  background-size: cover;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  //height: 416px;
+}
+
+.map-container {
+  display: flex;
+}
+
+.map-address-container {
+  background-color: $white;
+  width: 40%;
+  padding: 30px;
+}
+
+.map-address-btn {
+  width: 35px;
+  height: 35px;
+  border: none;
+  border-radius: 50%;
+  background-color: $grey;
+  color: $white;
+  margin-right: 17px;
+}
+
+.fa-address {
+  font-size: $font-size-xm;
+}
+
+.map-address-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 21px;
+}
+
+.map-address {
+  font-size: $font-size-xs;
+  color: $medium-gray;
+}

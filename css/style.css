@@ -263,7 +263,7 @@ nav { background-color: black; height: 90px; }
 
 .facts-grid-description { font-size: 12px; color: #7e7e7e; line-height: 30px; margin-bottom: 81px; text-align: center; }
 
-.social { background-color: #f0f0f0; border-bottom: 1px solid #bebebe; }
+.social { background-color: #f0f0f0; border-bottom: 1px solid #bebebe; padding-bottom: 0; }
 
 .social-flex { display: -ms-flexbox; display: flex; -ms-flex-pack: space-evenly; justify-content: space-evenly; }
 
@@ -289,7 +289,9 @@ nav { background-color: black; height: 90px; }
 
 .social-btn-pinterest { background-color: #b71c29; }
 
-.contact-header { font-size: 30px; text-transform: uppercase; text-align: center; padding-top: 60px; }
+.contact { background-color: #f0f0f0; }
+
+.contact-header { font-size: 30px; text-transform: uppercase; text-align: center; padding-top: 60px; margin-top: 0; }
 
 .contact-sub-header { font-size: 14px; color: #aeaeae; text-transform: uppercase; text-align: center; padding-bottom: 90px; }
 
@@ -305,15 +307,29 @@ nav { background-color: black; height: 90px; }
 
 ::placeholder { color: #aeaeae; font-size: 14px; }
 
-.contact-name { border: none; border-bottom: 2px solid #bebebe; width: 255px; }
+.contact-name { border: none; border-bottom: 2px solid #bebebe; width: 255px; background-color: #f0f0f0; }
 
-.contact-email { border: none; border-bottom: 2px solid #bebebe; width: 255px; margin-left: 30px; }
+.contact-email { border: none; border-bottom: 2px solid #bebebe; width: 255px; margin-left: 30px; background-color: #f0f0f0; }
 
-.contact-subject { border: none; border-bottom: 2px solid #bebebe; width: 540px; margin-bottom: 110px; }
+.contact-subject { border: none; border-bottom: 2px solid #bebebe; width: 540px; margin-bottom: 110px; background-color: #f0f0f0; }
 
-.contact-msg { border: none; border-bottom: 2px solid #bebebe; width: 540px; margin-bottom: 52px; }
+.contact-msg { border: none; border-bottom: 2px solid #bebebe; width: 540px; margin-bottom: 52px; background-color: #f0f0f0; }
 
 .contact-submit-btn { width: 194px; height: 45px; background-color: #b88b58; border: none; border-radius: 25px; color: white; font-weight: 700; font-size: 12px; text-transform: uppercase; transition: all 0.4s linear; margin-bottom: 75px; }
 
 .contact-submit-btn:hover { cursor: pointer; transform: scale(1.1); box-shadow: 0 0 6px black; }
+
+.map { background-image: url("/images/map.png"); background-repeat: none; background-size: cover; padding-top: 30px; padding-bottom: 30px; }
+
+.map-container { display: -ms-flexbox; display: flex; }
+
+.map-address-container { background-color: white; width: 40%; padding: 30px; }
+
+.map-address-btn { width: 35px; height: 35px; border: none; border-radius: 50%; background-color: #bebebe; color: white; margin-right: 17px; }
+
+.fa-address { font-size: 21px; }
+
+.map-address-item { display: -ms-flexbox; display: flex; -ms-flex-align: center; align-items: center; margin-bottom: 21px; }
+
+.map-address { font-size: 12px; color: #7e7e7e; }
 /*# sourceMappingURL=style.css.map */
