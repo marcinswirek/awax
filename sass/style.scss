@@ -865,71 +865,145 @@ nav {
 // Social section
 
 .social {
-    background-color: $ivory;
-    border-bottom: 1px solid $grey;
+  background-color: $ivory;
+  border-bottom: 1px solid $grey;
 }
 
 .social-flex {
-    display: flex;
-    justify-content: space-evenly;
+  display: flex;
+  justify-content: space-evenly;
 }
 
 .social-share {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 .social-buttons {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .fa-share-alt {
-    font-size: $font-size-l;
-    color: $light-grey;
-    line-height: 75px;
+  font-size: $font-size-l;
+  color: $light-grey;
+  line-height: 75px;
 }
 
 .social-text {
-    font-size: $font-size-s;
-    color: $light-grey;
-    text-transform: uppercase;
-    font-weight: 900;
-    margin-left: 15px;
+  font-size: $font-size-s;
+  color: $light-grey;
+  text-transform: uppercase;
+  font-weight: 900;
+  margin-left: 15px;
 }
 
 .social-btn-number {
-    font-size: $font-size-xxs;
-    color: $light-grey;
-    font-weight: 900;
+  font-size: $font-size-xxs;
+  color: $light-grey;
+  font-weight: 900;
+  margin-left: 3px;
 }
 
 .social-btn {
-    height: 33px;
-    width: 33px;
-    border: none;
-    border-radius: 50%;
-    color: $white;
-    margin-left: 36px;
+  height: 33px;
+  width: 33px;
+  border: none;
+  border-radius: 50%;
+  color: $white;
+  margin-left: 36px;
 }
 
 .social-btn-twitter {
-    background-color: #34c5f0;
+  background-color: #34c5f0;
 }
 
 .social-btn-linkedin {
-    background-color: #127cb4;
+  background-color: #127cb4;
 }
 
 .social-btn-facebook {
-    background-color: #336297;
+  background-color: #336297;
 }
 
 .social-btn-google {
-    background-color: #e74237;
+  background-color: #e74237;
 }
 
 .social-btn-pinterest {
-    background-color: #b71c29;
+  background-color: #b71c29;
 }
+
+// Contact section
+
+.contact-header {
+  font-size: $font-size-xl;
+  text-transform: uppercase;
+  text-align: center;
+  padding-top: 60px;
+}
+
+.contact-sub-header {
+  font-size: $font-size-s;
+  color: $light-grey;
+  text-transform: uppercase;
+  text-align: center;
+  padding-bottom: 90px;
+}
+
+.name-container {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 70px;
+}
+
+.message-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact-btn-container {
+  display: flex;
+  justify-content: center;
+}
+
+::placeholder {
+  color: $light-grey;
+  font-size: $font-size-s;
+}
+
+.contact-name {
+  border: none;
+  border-bottom: 2px solid $grey;
+  width: 255px;
+}
+
+.contact-email {
+  border: none;
+  border-bottom: 2px solid $grey;
+  width: 255px;
+  margin-left: 30px;
+}
+
+.contact-subject {
+  border: none;
+  border-bottom: 2px solid $grey;
+  width: 540px;
+  margin-bottom: 110px;
+}
+
+.contact-msg {
+  border: none;
+  border-bottom: 2px solid $grey;
+  width: 540px;
+  margin-bottom: 52px;
+}
+
+.contact-submit-btn {
+  @include btn-norm();
+  margin-bottom: 75px;
+}
+
+

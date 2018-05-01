@@ -275,7 +275,7 @@ nav { background-color: black; height: 90px; }
 
 .social-text { font-size: 14px; color: #aeaeae; text-transform: uppercase; font-weight: 900; margin-left: 15px; }
 
-.social-btn-number { font-size: 10px; color: #aeaeae; font-weight: 900; }
+.social-btn-number { font-size: 10px; color: #aeaeae; font-weight: 900; margin-left: 3px; }
 
 .social-btn { height: 33px; width: 33px; border: none; border-radius: 50%; color: white; margin-left: 36px; }
 
@@ -288,4 +288,32 @@ nav { background-color: black; height: 90px; }
 .social-btn-google { background-color: #e74237; }
 
 .social-btn-pinterest { background-color: #b71c29; }
+
+.contact-header { font-size: 30px; text-transform: uppercase; text-align: center; padding-top: 60px; }
+
+.contact-sub-header { font-size: 14px; color: #aeaeae; text-transform: uppercase; text-align: center; padding-bottom: 90px; }
+
+.name-container { display: -ms-flexbox; display: flex; -ms-flex-pack: center; justify-content: center; padding-bottom: 70px; }
+
+.message-container { display: -ms-flexbox; display: flex; -ms-flex-direction: column; flex-direction: column; -ms-flex-align: center; align-items: center; }
+
+.contact-btn-container { display: -ms-flexbox; display: flex; -ms-flex-pack: center; justify-content: center; }
+
+::-webkit-input-placeholder { color: #aeaeae; font-size: 14px; }
+
+:-ms-input-placeholder { color: #aeaeae; font-size: 14px; }
+
+::placeholder { color: #aeaeae; font-size: 14px; }
+
+.contact-name { border: none; border-bottom: 2px solid #bebebe; width: 255px; }
+
+.contact-email { border: none; border-bottom: 2px solid #bebebe; width: 255px; margin-left: 30px; }
+
+.contact-subject { border: none; border-bottom: 2px solid #bebebe; width: 540px; margin-bottom: 110px; }
+
+.contact-msg { border: none; border-bottom: 2px solid #bebebe; width: 540px; margin-bottom: 52px; }
+
+.contact-submit-btn { width: 194px; height: 45px; background-color: #b88b58; border: none; border-radius: 25px; color: white; font-weight: 700; font-size: 12px; text-transform: uppercase; transition: all 0.4s linear; margin-bottom: 75px; }
+
+.contact-submit-btn:hover { cursor: pointer; transform: scale(1.1); box-shadow: 0 0 6px black; }
 /*# sourceMappingURL=style.css.map */
