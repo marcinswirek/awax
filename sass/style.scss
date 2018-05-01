@@ -1089,6 +1089,7 @@ footer {
   background-color: $dark-grey;
   color: $white;
   transition: all 0.4s linear;
+  margin-right: 6px;
   &:hover {
     background-color: $brown;
     cursor: pointer;
@@ -1110,6 +1111,7 @@ footer {
   font-size: $font-size-xs;
   color: $medium-gray;
   margin-top: 0;
+  line-height: 25px;
 }
 
 .footer-newsteller {
