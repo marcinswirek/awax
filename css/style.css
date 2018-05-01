@@ -262,4 +262,30 @@ nav { background-color: black; height: 90px; }
 .facts-grid-header { font-size: 18px; color: white; text-transform: uppercase; margin: auto; margin-top: 20px; text-align: center; }
 
 .facts-grid-description { font-size: 12px; color: #7e7e7e; line-height: 30px; margin-bottom: 81px; text-align: center; }
+
+.social { background-color: #f0f0f0; border-bottom: 1px solid #bebebe; }
+
+.social-flex { display: -ms-flexbox; display: flex; -ms-flex-pack: space-evenly; justify-content: space-evenly; }
+
+.social-share { display: -ms-flexbox; display: flex; -ms-flex-align: center; align-items: center; }
+
+.social-buttons { display: -ms-flexbox; display: flex; -ms-flex-pack: justify; justify-content: space-between; -ms-flex-align: center; align-items: center; }
+
+.fa-share-alt { font-size: 24px; color: #aeaeae; line-height: 75px; }
+
+.social-text { font-size: 14px; color: #aeaeae; text-transform: uppercase; font-weight: 900; margin-left: 15px; }
+
+.social-btn-number { font-size: 10px; color: #aeaeae; font-weight: 900; }
+
+.social-btn { height: 33px; width: 33px; border: none; border-radius: 50%; color: white; margin-left: 36px; }
+
+.social-btn-twitter { background-color: #34c5f0; }
+
+.social-btn-linkedin { background-color: #127cb4; }
+
+.social-btn-facebook { background-color: #336297; }
+
+.social-btn-google { background-color: #e74237; }
+
+.social-btn-pinterest { background-color: #b71c29; }
 /*# sourceMappingURL=style.css.map */
