@@ -39,7 +39,7 @@ nav { background-color: black; height: 90px; }
 
 .hero-carousel-circles { display: -ms-flexbox; display: flex; position: absolute; bottom: 4vh; }
 
-.hero-phone-btn { height: 65px; width: 65px; border: none; border-radius: 50%; background-color: #b88b58; color: white; transform: rotate(-45deg); position: fixed; right: 60px; top: 90vh; box-shadow: 0 0 20px black; }
+.hero-phone-btn { height: 65px; width: 65px; border: none; border-radius: 50%; background-color: #b88b58; color: white; transform: rotate(-45deg); position: fixed; right: 60px; bottom: 60px; box-shadow: 0 0 20px black; }
 
 .fa-phone-hero { color: white; font-size: 48px; }
 
