@@ -188,9 +188,12 @@ nav {
   background-color: $brown;
   color: $white;
   transform: rotate(-45deg);
-  position: relative;
-  left: 42vw;
-  bottom: -29vh;
+  //position: relative;
+  //left: 42vw;
+  //bottom: -29vh;
+  position: fixed;
+  right: 60px;
+  top: 90vh;
   box-shadow: 0 0 20px black;
 }
 
