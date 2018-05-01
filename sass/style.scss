@@ -1135,3 +1135,21 @@ footer {
   background-color: $dark-grey;
   text-transform: uppercase;
 }
+
+.footer-scroll-btn {
+  height: 65px;
+  width: 65px;
+  border: none;
+  border-radius: 50%;
+  background-color: $brown;
+  color: $white;
+  //position: sticky;
+  box-shadow: 0 0 20px $black;
+  position: relative;
+  top: -6vh;
+  left: 4vw;
+}
+
+.fa-scroll-up {
+  font-size: $font-size-xxl;
+}
