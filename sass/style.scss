@@ -978,6 +978,7 @@ nav {
 ::placeholder {
   color: $light-grey;
   font-size: $font-size-s;
+  text-align: center;
 }
 
 .contact-name {
@@ -1024,7 +1025,6 @@ nav {
   background-size: cover;
   padding-top: 30px;
   padding-bottom: 30px;
-  //height: 416px;
 }
 
 .map-container {
@@ -1060,4 +1060,76 @@ nav {
 .map-address {
   font-size: $font-size-xs;
   color: $medium-gray;
+}
+
+// Footer section
+
+footer {
+  background-color: $black;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+.footer-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-gap: 30px;
+}
+
+.footer-flex-social {
+  display: flex;
+  align-items: center;
+}
+
+.footer-social-btn {
+  height: 33px;
+  width: 33px;
+  border: none;
+  border-radius: 50%;
+  background-color: $dark-grey;
+  color: $white;
+  transition: all 0.4s linear;
+  &:hover {
+    background-color: $brown;
+    cursor: pointer;
+  }
+}
+
+.footer-copy-text {
+  color: $white;
+  font-size: $font-size-s;
+}
+
+.footer-flex {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.footer-text {
+  font-size: $font-size-xs;
+  color: $medium-gray;
+  margin-top: 0;
+}
+
+.footer-newsteller {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: $dark-grey;
+  padding: 50px;
+}
+
+.footer-newsteller-btn {
+  @include btn-norm();
+  margin-top: 28px;
+}
+
+.footer-newsteller-email {
+  border: none;
+  border-bottom: 2px solid $grey;
+  width: 220px;
+  background-color: $dark-grey;
+  text-transform: uppercase;
 }
