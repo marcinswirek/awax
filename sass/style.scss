@@ -205,8 +205,8 @@ nav {
   //left: 42vw;
   //bottom: -29vh;
   position: fixed;
-  right: 60px;
-  bottom: 60px;
+  right: 20px;
+  bottom: 20px;
   box-shadow: 0 0 20px black;
 }
 
@@ -1017,7 +1017,7 @@ nav {
   border: none;
   border-bottom: 2px solid $grey;
   width: 540px;
-  margin-bottom: 110px;
+  //margin-bottom: 110px;
   background-color: $ivory;
 }
 
@@ -1279,7 +1279,8 @@ footer {
   .team-header-container,
   .clients-header,
   .premium-header,
-  .facts-header {
+  .facts-header,
+  .contact-header {
       padding-top: 30px;
   }
 
@@ -1405,5 +1406,44 @@ footer {
 
 .social-btn {
     margin-left: 10px;
+}
+
+.contact-sub-header {
+    padding-bottom: 30px;
+}
+
+.name-container {
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 0;
+}
+
+.contact-name,
+.contact-email,
+.contact-subject,
+.contact-msg {
+    width: 90%;
+    margin: auto;
+}
+
+.contact-name,
+.contact-email,
+.contact-subject,
+.contact-msg {
+    margin-bottom: 40px;
+}
+
+.contact-submit-btn {
+    width: 100%;
+}
+
+.map-address-container {
+    width: 95%;
+    margin: auto;
+}
+
+.footer-container {
+    grid-template-columns: auto;
+    
 }
 }
