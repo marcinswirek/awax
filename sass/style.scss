@@ -64,7 +64,7 @@ $grid-col-4: auto auto auto auto;
 
 * {
   box-sizing: border-box;
-  //border: 0.2px solid red;
+  border: 0.2px solid red;
 }
 
 body {
@@ -122,6 +122,19 @@ nav {
     text-decoration: none;
     color: $white;
   }
+}
+
+// Hamburger menu
+
+.menu-button-input[type="checkbox"] + label {
+  font-size: 35px;
+  cursor: pointer;
+}
+
+.menu-button-input,
+.menu-button-label {
+  display: none;
+  color: $white;
 }
 
 // Hero section
@@ -664,7 +677,7 @@ nav {
   font-size: $font-size-xl;
   text-transform: uppercase;
   text-align: center;
-  padding-top: 58px;
+  padding-top: 60px;
 }
 
 .price-sub-header {
@@ -731,13 +744,13 @@ nav {
   margin-top: 28px;
 }
 
-.price-flex {
+// Premium section
+
+.premium-flex {
   display: flex;
   padding-bottom: 57px;
   border-bottom: 1px solid $grey;
 }
-
-// Premium section
 
 .premium-header {
   text-align: center;
@@ -794,6 +807,7 @@ nav {
 .premium-btn-container {
   display: flex;
   justify-content: center;
+  padding-top: 10px;
   padding-bottom: 60px;
 }
 
@@ -1155,4 +1169,241 @@ footer {
 
 .fa-scroll-up {
   font-size: $font-size-xxl;
+}
+
+//RWD
+
+@media (max-width: 1000px) {
+  .menu-button-label {
+    display: block;
+    padding: 3px 15px;
+    color: $white;
+  }
+
+  .menu-button-input:not(:checked) ~ ul {
+    display: none;
+  }
+
+  .menu-button-input:checked ~ ul {
+    display: block;
+  }
+
+  .menu-list {
+    //margin-top: 33px;
+    margin: auto;
+    //display: flex;
+    flex-direction: column;
+    align-items: center;
+    //justify-content: center;
+    width: 100%;
+    padding: 0;
+  }
+
+  .menu-item {
+    background-color: $black;
+    opacity: 0.8;
+    z-index: 999;
+    display: flex;
+    flex-direction: column;
+    //justify-content: center;
+    //align-items: center;
+    width: 100%;
+    line-height: 44px;
+    //margin-top: 0;
+    margin: auto;
+    &:after {
+      width: 95%;
+      margin: auto;
+    }
+  }
+
+  .nav-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: space-between;
+  }
+
+  //   .nav-logo {
+  //       display: none;
+  //   }
+
+  .topnav-container {
+    display: flex;
+    //justify-content:;
+  }
+
+  .hero-header {
+    font-size: $font-size-xl;
+  }
+
+  .about-header-container {
+    padding-bottom: 10px;
+  }
+
+  .about-paragraph {
+    margin-bottom: 10px;
+  }
+
+  .about-btn {
+    margin-top: 5px;
+    width: 100%;
+  }
+
+  .video-text-container {
+    flex-direction: column;
+  }
+
+  .about-text-container {
+    width: 100%;
+  }
+
+  .about-video-container {
+    width: 90%;
+    margin-top: 20px;
+  }
+
+  .services-grid {
+    grid-template-columns: auto auto;
+    padding-top: 20px;
+  }
+
+  .services-grid-item {
+    border-right: none;
+    border-left: none;
+    padding: 15px;
+    margin-bottom: 20px;
+  }
+
+  .services-header,
+  .projects-header,
+  .team-header-container,
+  .clients-header,
+  .premium-header,
+  .facts-header {
+      padding-top: 30px;
+  }
+
+  .team-carousel-circles,
+  .clients-carousel-circles,
+  .premium-carousel-circles {
+      padding-top: 20px;
+      padding-bottom: 20px;
+  }
+
+  .projects-menu-list {
+       display: grid;
+       grid-template-columns: auto auto auto;
+       grid-gap: 5px;
+       margin: auto;
+       padding: 0;
+   }
+
+   .projects-menu {
+       display: flex;
+       align-items: center;
+   }
+
+  .projects-menu-item {
+    margin-right: 10px;
+    > a {
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+    }
+  }
+
+  .projects-gallery-grid {
+      grid-template-columns: auto auto;
+      grid-gap: 15px;
+  }
+
+  .projects-gallery-item {
+      padding: 0;
+  }
+
+  .projects-btn {
+      width: 100%;
+  }
+
+  .projects-btn-container {
+      padding-bottom: 30px;
+  }
+
+  .team-grid {
+    grid-template-columns: auto;
+  }
+
+  .clients-description-text {
+      width: 85%;
+  }
+
+  .clients-logo-container {
+      display: grid;
+      grid-template-columns: auto auto auto;
+      padding-top: 20px;
+      padding-bottom: 20px;
+      width: 90%;
+  }
+
+  .clients-logo-item {
+      margin: 3px auto;
+}
+
+.price-grid {
+    grid-template-columns: auto auto;
+    grid-gap: 10px;
+}
+
+.price-grid-item {
+    margin-bottom: 20px;
+}
+
+.premium-img {
+    display: none;
+}
+
+.premium-list {
+    margin-left: auto;
+}
+
+.premium-flex {
+    padding-bottom: 10px;
+}
+
+.premium-btn {
+    width: 100%;
+}
+
+.premium-btn-container {
+    padding-bottom: 30px;
+}
+
+.facts-sub-header {
+    padding-bottom: 20px;
+}
+
+.facts-grid {
+    grid-template-columns: auto auto;
+    grid-gap: 20px;
+}
+
+.facts-grid-description {
+    margin-bottom: 30px;
+}
+
+.social-flex {
+    flex-direction: column;
+}
+
+.social-share {
+    justify-content: space-evenly;
+}
+
+.fa-share-alt {
+    line-height: 30px;
+}
+
+.social-btn {
+    margin-left: 10px;
+}
 }
