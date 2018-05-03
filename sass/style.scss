@@ -64,7 +64,7 @@ $grid-col-4: auto auto auto auto;
 
 * {
   box-sizing: border-box;
-  //border: 0.2px solid red;
+  border: 0.21px solid red;
 }
 
 body {
@@ -541,6 +541,9 @@ nav {
 
 .team-grid-item {
   background-color: $white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .team-grid-img {
@@ -552,7 +555,7 @@ nav {
   text-transform: uppercase;
   color: $almost-black;
   text-align: center;
-  margin-top: -15px;
+  margin-top: 0;
   margin-bottom: 3px;
 }
 
@@ -1172,9 +1175,13 @@ footer {
   font-size: $font-size-xxl;
 }
 
-//RWD
+//
+//RWD//////////////////////////////////////////////////////////
+//
 
-@media (max-width: 1000px) {
+//Max 360px//////////////////////////////////////////////////
+
+@media (max-width: 420px) {
   .menu-button-label {
     display: block;
     padding: 3px 15px;
@@ -1299,6 +1306,7 @@ footer {
     grid-gap: 5px;
     margin: auto;
     padding: 0;
+    width: 100%;
   }
 
   .projects-menu {
@@ -1338,6 +1346,15 @@ footer {
 
   .team-grid {
     grid-template-columns: auto;
+    grid-gap: 15px;
+  }
+
+  .team-grid-img {
+    padding: 35px 60px;
+  }
+
+  .team-btn-container {
+    margin: 0 auto;
   }
 
   .clients-description-text {
@@ -1346,7 +1363,7 @@ footer {
 
   .clients-logo-container {
     display: grid;
-    grid-template-columns: auto auto auto;
+    grid-template-columns: auto auto;
     padding-top: 20px;
     padding-bottom: 20px;
     width: 90%;
