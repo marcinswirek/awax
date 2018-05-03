@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat|PT+Sans|Quicksand");
-* { box-sizing: border-box; border: 0.2px solid red; }
+* { box-sizing: border-box; }
 
 body { font-family: "Montserrat", sans-serif; margin: 0 auto; }
 
@@ -353,7 +353,7 @@ footer { background-color: black; padding-top: 32px; padding-bottom: 32px; }
 
 .footer-text { font-size: 12px; color: #7e7e7e; margin-top: 0; line-height: 25px; }
 
-.footer-newsteller { display: -ms-flexbox; display: flex; -ms-flex-direction: column; flex-direction: column; -ms-flex-pack: space-evenly; justify-content: space-evenly; -ms-flex-align: center; align-items: center; background-color: #373737; padding: 50px; }
+.footer-newsteller { display: -ms-flexbox; display: flex; -ms-flex-direction: column; flex-direction: column; -ms-flex-pack: space-evenly; justify-content: space-evenly; -ms-flex-align: center; align-items: center; background-color: #373737; padding: 50px; width: 100%; }
 
 .footer-newsteller-btn { width: 194px; height: 45px; background-color: #b88b58; border: none; border-radius: 25px; color: white; font-weight: 700; font-size: 12px; text-transform: uppercase; transition: all 0.4s linear; margin-top: 28px; }
 
@@ -382,12 +382,12 @@ footer { background-color: black; padding-top: 32px; padding-bottom: 32px; }
   .about-video-container { width: 90%; margin-top: 20px; }
   .services-grid { -ms-grid-columns: auto auto; grid-template-columns: auto auto; padding-top: 20px; }
   .services-grid-item { border-right: none; border-left: none; padding: 15px; margin-bottom: 20px; }
-  .services-header, .projects-header, .team-header-container, .clients-header, .premium-header, .facts-header, .contact-header { padding-top: 30px; }
+  .services-header, .projects-header, .team-header-container, .clients-header, .premium-header, .facts-header, .contact-header, .price-header { padding-top: 30px; }
   .team-carousel-circles, .clients-carousel-circles, .premium-carousel-circles { padding-top: 20px; padding-bottom: 20px; }
   .projects-menu-list { display: -ms-grid; display: grid; -ms-grid-columns: auto auto auto; grid-template-columns: auto auto auto; grid-gap: 5px; margin: auto; padding: 0; }
-  .projects-menu { display: -ms-flexbox; display: flex; -ms-flex-align: center; align-items: center; }
+  .projects-menu { display: -ms-flexbox; display: flex; -ms-flex-align: center; align-items: center; width: 90%; margin: auto; }
   .projects-menu-item { margin-right: 10px; }
-  .projects-menu-item > a { display: -ms-flexbox; display: flex; -ms-flex-direction: column; flex-direction: column; margin: auto; }
+  .projects-menu-item > a { font-size: 12px; display: -ms-flexbox; display: flex; -ms-flex-direction: column; flex-direction: column; margin: auto; padding: 5px; }
   .projects-gallery-grid { -ms-grid-columns: auto auto; grid-template-columns: auto auto; grid-gap: 15px; }
   .projects-gallery-item { padding: 0; }
   .projects-btn { width: 100%; }
@@ -408,13 +408,17 @@ footer { background-color: black; padding-top: 32px; padding-bottom: 32px; }
   .facts-grid-description { margin-bottom: 30px; }
   .social-flex { -ms-flex-direction: column; flex-direction: column; }
   .social-share { -ms-flex-pack: space-evenly; justify-content: space-evenly; }
+  .social-buttons { margin-bottom: 5px; }
   .fa-share-alt { line-height: 30px; }
   .social-btn { margin-left: 10px; }
   .contact-sub-header { padding-bottom: 30px; }
   .name-container { -ms-flex-direction: column; flex-direction: column; -ms-flex-align: center; align-items: center; padding-bottom: 0; }
-  .contact-name, .contact-email, .contact-subject, .contact-msg { width: 90%; margin: auto; }
-  .contact-name, .contact-email, .contact-subject, .contact-msg { margin-bottom: 40px; }
+  .contact-name, .contact-email, .contact-subject, .contact-msg { width: 90%; margin: auto; margin-bottom: 40px; }
   .contact-submit-btn { width: 100%; }
   .map-address-container { width: 95%; margin: auto; }
-  .footer-container { -ms-grid-columns: auto; grid-template-columns: auto; } }
+  .footer-container { -ms-grid-columns: auto; grid-template-columns: auto; }
+  .footer-newsteller-btn { width: 135%; }
+  .footer-text { width: 95%; margin: auto; }
+  .footer-flex-social { margin: auto; }
+  footer { padding-top: 5px; } }
 /*# sourceMappingURL=style.css.map */

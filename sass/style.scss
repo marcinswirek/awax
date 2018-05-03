@@ -64,7 +64,7 @@ $grid-col-4: auto auto auto auto;
 
 * {
   box-sizing: border-box;
-  border: 0.2px solid red;
+  //border: 0.2px solid red;
 }
 
 body {
@@ -1138,6 +1138,7 @@ footer {
   align-items: center;
   background-color: $dark-grey;
   padding: 50px;
+  width: 100%;
 }
 
 .footer-newsteller-btn {
@@ -1280,7 +1281,8 @@ footer {
   .clients-header,
   .premium-header,
   .facts-header,
-  .contact-header {
+  .contact-header,
+  .price-header {
     padding-top: 30px;
   }
 
@@ -1302,14 +1304,18 @@ footer {
   .projects-menu {
     display: flex;
     align-items: center;
+    width: 90%;
+    margin: auto;
   }
 
   .projects-menu-item {
     margin-right: 10px;
     > a {
+      font-size: $font-size-xs;
       display: flex;
       flex-direction: column;
       margin: auto;
+      padding: 5px;
     }
   }
 
@@ -1400,6 +1406,10 @@ footer {
     justify-content: space-evenly;
   }
 
+  .social-buttons {
+    margin-bottom: 5px;
+  }
+
   .fa-share-alt {
     line-height: 30px;
   }
@@ -1424,12 +1434,6 @@ footer {
   .contact-msg {
     width: 90%;
     margin: auto;
-  }
-
-  .contact-name,
-  .contact-email,
-  .contact-subject,
-  .contact-msg {
     margin-bottom: 40px;
   }
 
@@ -1444,5 +1448,22 @@ footer {
 
   .footer-container {
     grid-template-columns: auto;
+  }
+
+  .footer-newsteller-btn {
+    width: 135%;
+  }
+
+  .footer-text {
+    width: 95%;
+    margin: auto;
+  }
+
+  .footer-flex-social {
+    margin: auto;
+  }
+
+  footer {
+    padding-top: 5px;
   }
 }
