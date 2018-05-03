@@ -1281,53 +1281,53 @@ footer {
   .premium-header,
   .facts-header,
   .contact-header {
-      padding-top: 30px;
+    padding-top: 30px;
   }
 
   .team-carousel-circles,
   .clients-carousel-circles,
   .premium-carousel-circles {
-      padding-top: 20px;
-      padding-bottom: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
   }
 
   .projects-menu-list {
-       display: grid;
-       grid-template-columns: auto auto auto;
-       grid-gap: 5px;
-       margin: auto;
-       padding: 0;
-   }
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 5px;
+    margin: auto;
+    padding: 0;
+  }
 
-   .projects-menu {
-       display: flex;
-       align-items: center;
-   }
+  .projects-menu {
+    display: flex;
+    align-items: center;
+  }
 
   .projects-menu-item {
     margin-right: 10px;
     > a {
-        display: flex;
-        flex-direction: column;
-        margin: auto;
+      display: flex;
+      flex-direction: column;
+      margin: auto;
     }
   }
 
   .projects-gallery-grid {
-      grid-template-columns: auto auto;
-      grid-gap: 15px;
+    grid-template-columns: auto auto;
+    grid-gap: 15px;
   }
 
   .projects-gallery-item {
-      padding: 0;
+    padding: 0;
   }
 
   .projects-btn {
-      width: 100%;
+    width: 100%;
   }
 
   .projects-btn-container {
-      padding-bottom: 30px;
+    padding-bottom: 30px;
   }
 
   .team-grid {
@@ -1335,115 +1335,114 @@ footer {
   }
 
   .clients-description-text {
-      width: 85%;
+    width: 85%;
   }
 
   .clients-logo-container {
-      display: grid;
-      grid-template-columns: auto auto auto;
-      padding-top: 20px;
-      padding-bottom: 20px;
-      width: 90%;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    width: 90%;
   }
 
   .clients-logo-item {
-      margin: 3px auto;
-}
+    margin: 3px auto;
+  }
 
-.price-grid {
+  .price-grid {
     grid-template-columns: auto auto;
     grid-gap: 10px;
-}
+  }
 
-.price-grid-item {
+  .price-grid-item {
     margin-bottom: 20px;
-}
+  }
 
-.premium-img {
+  .premium-img {
     display: none;
-}
+  }
 
-.premium-list {
+  .premium-list {
     margin-left: auto;
-}
+  }
 
-.premium-flex {
+  .premium-flex {
     padding-bottom: 10px;
-}
+  }
 
-.premium-btn {
+  .premium-btn {
     width: 100%;
-}
+  }
 
-.premium-btn-container {
+  .premium-btn-container {
     padding-bottom: 30px;
-}
+  }
 
-.facts-sub-header {
+  .facts-sub-header {
     padding-bottom: 20px;
-}
+  }
 
-.facts-grid {
+  .facts-grid {
     grid-template-columns: auto auto;
     grid-gap: 20px;
-}
+  }
 
-.facts-grid-description {
+  .facts-grid-description {
     margin-bottom: 30px;
-}
+  }
 
-.social-flex {
+  .social-flex {
     flex-direction: column;
-}
+  }
 
-.social-share {
+  .social-share {
     justify-content: space-evenly;
-}
+  }
 
-.fa-share-alt {
+  .fa-share-alt {
     line-height: 30px;
-}
+  }
 
-.social-btn {
+  .social-btn {
     margin-left: 10px;
-}
+  }
 
-.contact-sub-header {
+  .contact-sub-header {
     padding-bottom: 30px;
-}
+  }
 
-.name-container {
+  .name-container {
     flex-direction: column;
     align-items: center;
     padding-bottom: 0;
-}
+  }
 
-.contact-name,
-.contact-email,
-.contact-subject,
-.contact-msg {
+  .contact-name,
+  .contact-email,
+  .contact-subject,
+  .contact-msg {
     width: 90%;
     margin: auto;
-}
+  }
 
-.contact-name,
-.contact-email,
-.contact-subject,
-.contact-msg {
+  .contact-name,
+  .contact-email,
+  .contact-subject,
+  .contact-msg {
     margin-bottom: 40px;
-}
+  }
 
-.contact-submit-btn {
+  .contact-submit-btn {
     width: 100%;
-}
+  }
 
-.map-address-container {
+  .map-address-container {
     width: 95%;
     margin: auto;
-}
+  }
 
-.footer-container {
+  .footer-container {
     grid-template-columns: auto;
-    
-}
+  }
 }
