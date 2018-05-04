@@ -54,7 +54,6 @@ $grid-col-4: auto auto auto auto;
 
   &:hover {
     cursor: pointer;
-    //transform: scale(1.1);
     box-shadow: 0 0 6px $black;
     background-color: $brown;
   }
@@ -64,7 +63,7 @@ $grid-col-4: auto auto auto auto;
 
 * {
   box-sizing: border-box;
-  border: 0.21px solid red;
+  //border: 0.21px solid red;
 }
 
 body {
@@ -134,7 +133,7 @@ nav {
 .menu-button-input,
 .menu-button-label {
   display: none;
-  //color: $white;
+  color: $white;
 }
 
 // Hero section
@@ -201,9 +200,6 @@ nav {
   background-color: $brown;
   color: $white;
   transform: rotate(-45deg);
-  //position: relative;
-  //left: 42vw;
-  //bottom: -29vh;
   position: fixed;
   right: 20px;
   bottom: 20px;
@@ -218,7 +214,6 @@ nav {
 // About section
 
 .about {
-  //height: 450px;
   background-color: $ivory;
 }
 
@@ -788,7 +783,6 @@ nav {
 
 .premium-list-text {
   margin-left: 60px;
-  //margin-top: 10px;
   line-height: 30px;
 }
 
@@ -831,7 +825,6 @@ nav {
   display: flex;
   flex-direction: column;
   align-items: center;
-  //justify-content: space-evenly;
 }
 
 .facts-header {
@@ -1166,7 +1159,6 @@ footer {
   border-radius: 50%;
   background-color: $brown;
   color: $white;
-  //position: sticky;
   box-shadow: 0 0 20px $black;
   position: relative;
   top: -6vh;
@@ -1181,65 +1173,16 @@ footer {
 //RWD//////////////////////////////////////////////////////////
 //
 
-//Max 1350px/////////////////////////////////////////////////
+//Max 1150px/////////////////////////////////////////////////
 
-@media (max-width: 1350px) {
-  .menu-button-label {
-    display: block;
-    padding: 3px 15px;
-    color: $white;
-  }
-
-  .menu-button-input:not(:checked) ~ ul {
-    display: none;
-  }
-
-  .menu-button-input:checked ~ ul {
-    display: block;
-  }
-
+@media (max-width: 1150px) {
   .menu-list {
-    //margin-top: 33px;
-    margin: auto;
-    //display: flex;
-    flex-direction: column;
-    align-items: center;
-    //justify-content: center;
-    width: 100%;
+    font-size: $font-size-xs;
     padding: 0;
   }
 
-  .menu-item {
-    background-color: $black;
-    opacity: 0.8;
-    z-index: 999;
-    display: flex;
-    flex-direction: column;
-    //justify-content: center;
-    //align-items: center;
-    width: 100%;
-    line-height: 44px;
-    //margin-top: 0;
-    margin: auto;
-    &:after {
-      width: 95%;
-      margin: auto;
-    }
-  }
-
-  .nav-menu {
-    display: flex;
-    flex-direction: column;
-    align-items: space-between;
-  }
-
-  //   .nav-logo {
-  //       display: none;
-  //   }
-
-  .topnav-container {
-    display: flex;
-    //justify-content:;
+  .nav-logo {
+    display: none;
   }
 
   .hero-header {
@@ -1256,37 +1199,11 @@ footer {
 
   .about-btn {
     margin: 5px auto;
-    // width: 100%;
   }
 
   .about-video-container {
     height: 25vh;
   }
-
-  //   .video-text-container {
-  //     flex-direction: column;
-  //   }
-
-  //   .about-text-container {
-  //     width: 100%;
-  //   }
-
-  //   .about-video-container {
-  //     width: 90%;
-  //     margin-top: 20px;
-  //   }
-
-//   .services-grid {
-//     grid-template-columns: auto auto;
-//     padding-top: 20px;
-//   }
-
-//   .services-grid-item {
-//     border-right: none;
-//     border-left: none;
-//     padding: 15px;
-//     margin-bottom: 20px;
-//   }
 
   .services-header,
   .projects-header,
@@ -1342,10 +1259,6 @@ footer {
     padding: 0;
   }
 
-  //   .projects-btn {
-  //     width: 100%;
-  //   }
-
   .projects-btn-container {
     padding-bottom: 30px;
   }
@@ -1366,14 +1279,6 @@ footer {
   .clients-description-text {
     width: 85%;
   }
-
-  //   .clients-logo-container {
-  //     display: grid;
-  //     grid-template-columns: auto auto auto;
-  //     padding-top: 20px;
-  //     padding-bottom: 20px;
-  //     width: 90%;
-  //   }
 
   .clients-logo-item {
     margin: 3px auto;
@@ -1399,10 +1304,6 @@ footer {
   .premium-flex {
     padding-bottom: 10px;
   }
-
-  //   .premium-btn {
-  //     width: 100%;
-  //   }
 
   .premium-btn-container {
     padding-bottom: 30px;
@@ -1460,12 +1361,8 @@ footer {
     margin-bottom: 40px;
   }
 
-  //   .contact-submit-btn {
-  //     width: 100%;
-  //   }
-
   .map-address-container {
-    width: 95%;
+    width: 50%;
     margin: auto;
   }
 
@@ -1488,84 +1385,68 @@ footer {
 
   footer {
     padding-top: 5px;
+  }
+}
+
+//Max 790px//////////////////////////////////////////////////
+
+@media (max-width: 790px) {
+  .menu-button-label {
+    float: right;
+    display: block;
+    padding: 3px 15px;
+    color: $white;
+  }
+
+  .menu-button-input:not(:checked) ~ ul {
+    display: none;
+  }
+
+  .menu-button-input:checked ~ ul {
+    display: block;
+  }
+
+  .menu-list {
+    margin: auto;
+    flex-direction: column;
+    align-items: center;
+    width: 30%;
+    padding: 0;
+  }
+
+  .menu-item {
+    background-color: $black;
+    opacity: 0.8;
+    z-index: 999;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    line-height: 44px;
+    margin: auto;
+    &:after {
+      width: 95%;
+      margin: auto;
+    }
+  }
+
+  .nav-menu {
+    display: flex;
+    flex-direction: column;
   }
 }
 
 //Max 650px//////////////////////////////////////////////////
 
 @media (max-width: 650px) {
-  .menu-button-label {
-    display: block;
-    padding: 3px 15px;
-    color: $white;
-  }
-
-//   .nav {
-//       display: flex;
-//   }
-
-  .menu-button-input:not(:checked) ~ ul {
-    display: none;
-  }
-
-  .menu-button-input:checked ~ ul {
-    display: block;
-  }
-
   .menu-list {
-    //margin-top: 33px;
-    margin: auto;
-    //display: flex;
-    // flex-direction: column;
-    // align-items: center;
-    //justify-content: center;
     width: 100%;
-    padding: 0;
   }
-
-  .menu-item {
-    background-color: $black;
-    opacity: 0.8;
-    z-index: 999;
-    display: flex;
-    flex-direction: column;
-    //justify-content: center;
-    //align-items: center;
-    width: 100%;
-    line-height: 44px;
-    //margin-top: 0;
-    margin: auto;
-    &:after {
-      width: 95%;
-      margin: auto;
-    }
-  }
-
-  .nav-menu {
-    display: flex;
-    flex-direction: column;
-    align-items: space-between;
-  }
-
-    .nav-logo {
-        display: none;
-    }
 
   .topnav-container {
     display: flex;
-    //justify-content;
-  }
-
-  .hero-header {
-    font-size: $font-size-xl;
-  }
-
-  .about-header-container {
-    padding-bottom: 10px;
   }
 
   .about-paragraph {
-    margin-bottom: 10px;
     width: 93%;
     margin: auto;
   }
@@ -1586,7 +1467,6 @@ footer {
   .about-video-container {
     width: 90%;
     margin-top: 20px;
-    height: 25vh;
   }
 
   .services-grid {
@@ -1601,83 +1481,16 @@ footer {
     margin-bottom: 20px;
   }
 
-  .services-header,
-  .projects-header,
-  .team-header-container,
-  .clients-header,
-  .premium-header,
-  .facts-header,
-  .contact-header,
-  .price-header {
-    padding-top: 30px;
-  }
-
-  .team-carousel-circles,
-  .clients-carousel-circles,
-  .premium-carousel-circles {
-    padding-top: 20px;
-    padding-bottom: 20px;
-  }
-
-  .projects-menu-list {
-    display: grid;
-    grid-template-columns: auto auto auto;
-    grid-gap: 5px;
-    margin: auto;
-    padding: 0;
-    width: 100%;
-  }
-
-  .projects-menu {
-    display: flex;
-    align-items: center;
-    width: 90%;
-    margin: auto;
-  }
-
-  .projects-menu-item {
-    margin-right: 10px;
-    > a {
-      font-size: $font-size-xs;
-      display: flex;
-      flex-direction: column;
-      margin: auto;
-      padding: 5px;
-    }
-  }
-
   .projects-gallery-grid {
     grid-template-columns: auto auto;
-    grid-gap: 15px;
-  }
-
-  .projects-gallery-item {
-    padding: 0;
   }
 
   .projects-btn {
     width: 100%;
   }
 
-  .projects-btn-container {
-    padding-bottom: 30px;
-  }
-
   .team-grid {
     grid-template-columns: auto;
-    grid-gap: 15px;
-  }
-
-  .team-grid-img {
-    padding: 35px 60px;
-  }
-
-  .team-btn-container {
-    margin: 0 auto;
-  }
-
-  .clients-description-text {
-    width: 85%;
   }
 
   .clients-logo-container {
@@ -1694,83 +1507,10 @@ footer {
 
   .price-grid {
     grid-template-columns: auto auto;
-    grid-gap: 10px;
-  }
-
-  .price-grid-item {
-    margin-bottom: 20px;
-  }
-
-  .premium-img {
-    display: none;
-  }
-
-  .premium-list {
-    margin-left: auto;
-  }
-
-  .premium-flex {
-    padding-bottom: 10px;
   }
 
   .premium-btn {
     width: 100%;
-  }
-
-  .premium-btn-container {
-    padding-bottom: 30px;
-  }
-
-  .facts-sub-header {
-    padding-bottom: 20px;
-  }
-
-  .facts-grid {
-    grid-template-columns: auto auto;
-    grid-gap: 20px;
-  }
-
-  .facts-grid-description {
-    margin-bottom: 30px;
-  }
-
-  .social-flex {
-    flex-direction: column;
-  }
-
-  .social-share {
-    justify-content: space-evenly;
-  }
-
-  .social-buttons {
-    margin-bottom: 5px;
-  }
-
-  .fa-share-alt {
-    line-height: 30px;
-  }
-
-  .social-btn {
-    margin-left: 10px;
-  }
-
-  .contact-sub-header {
-    padding-bottom: 30px;
-  }
-
-  .name-container {
-    flex-direction: column;
-    align-items: center;
-    padding-bottom: 0;
-  }
-
-  .contact-name,
-  .contact-email,
-  .contact-subject,
-  .contact-msg {
-    width: 90%;
-    margin: auto;
-    margin-bottom: 40px;
   }
 
   .contact-submit-btn {
@@ -1779,226 +1519,26 @@ footer {
 
   .map-address-container {
     width: 95%;
-    margin: auto;
-  }
-
-  .footer-container {
-    grid-template-columns: auto;
   }
 
   .footer-newsteller-btn {
     width: 100%;
-  }
-
-  .footer-text {
-    width: 95%;
-    margin: auto;
-  }
-
-  .footer-flex-social {
-    margin: auto;
-  }
-
-  .footer-copy-text {
-    text-align: center;
-  }
-
-  footer {
-    padding-top: 5px;
   }
 }
 
 //Max 360px//////////////////////////////////////////////////
 
 @media (max-width: 360px) {
-  .menu-button-label {
-    display: block;
-    padding: 3px 15px;
-    color: $white;
-  }
-
-  .menu-button-input:not(:checked) ~ ul {
-    display: none;
-  }
-
-  .menu-button-input:checked ~ ul {
-    display: block;
-  }
-
   .menu-list {
-    //margin-top: 33px;
-    margin: auto;
-    //display: flex;
-    flex-direction: column;
-    align-items: center;
-    //justify-content: center;
     width: 100%;
-    padding: 0;
-  }
-
-  .menu-item {
-    background-color: $black;
-    opacity: 0.8;
-    z-index: 999;
-    display: flex;
-    flex-direction: column;
-    //justify-content: center;
-    //align-items: center;
-    width: 100%;
-    line-height: 44px;
-    //margin-top: 0;
-    margin: auto;
-    &:after {
-      width: 95%;
-      margin: auto;
-    }
   }
 
   .nav-menu {
-    display: flex;
-    flex-direction: column;
     align-items: space-between;
   }
 
-  //   .nav-logo {
-  //       display: none;
-  //   }
-
-  .topnav-container {
-    display: flex;
-    //justify-content:;
-  }
-
-  .hero-header {
-    font-size: $font-size-xl;
-  }
-
-  .about-header-container {
-    padding-bottom: 10px;
-  }
-
-  .about-paragraph {
-    margin-bottom: 10px;
-    width: 93%;
-    margin: auto;
-  }
-
-  .about-btn {
-    margin-top: 5px;
-    width: 100%;
-  }
-
-  .video-text-container {
-    flex-direction: column;
-  }
-
-  .about-text-container {
-    width: 100%;
-  }
-
-  .about-video-container {
-    width: 90%;
-    margin-top: 20px;
-    height: 25vh;
-  }
-
-  .services-grid {
-    grid-template-columns: auto auto;
-    padding-top: 20px;
-  }
-
-  .services-grid-item {
-    border-right: none;
-    border-left: none;
-    padding: 15px;
-    margin-bottom: 20px;
-  }
-
-  .services-header,
-  .projects-header,
-  .team-header-container,
-  .clients-header,
-  .premium-header,
-  .facts-header,
-  .contact-header,
-  .price-header {
-    padding-top: 30px;
-  }
-
-  .team-carousel-circles,
-  .clients-carousel-circles,
-  .premium-carousel-circles {
-    padding-top: 20px;
-    padding-bottom: 20px;
-  }
-
-  .projects-menu-list {
-    display: grid;
-    grid-template-columns: auto auto auto;
-    grid-gap: 5px;
-    margin: auto;
-    padding: 0;
-    width: 100%;
-  }
-
-  .projects-menu {
-    display: flex;
-    align-items: center;
-    width: 90%;
-    margin: auto;
-  }
-
-  .projects-menu-item {
-    margin-right: 10px;
-    > a {
-      font-size: $font-size-xs;
-      display: flex;
-      flex-direction: column;
-      margin: auto;
-      padding: 5px;
-    }
-  }
-
-  .projects-gallery-grid {
-    grid-template-columns: auto auto;
-    grid-gap: 15px;
-  }
-
-  .projects-gallery-item {
-    padding: 0;
-  }
-
-  .projects-btn {
-    width: 100%;
-  }
-
-  .projects-btn-container {
-    padding-bottom: 30px;
-  }
-
-  .team-grid {
-    grid-template-columns: auto;
-    grid-gap: 15px;
-  }
-
-  .team-grid-img {
-    padding: 35px 60px;
-  }
-
-  .team-btn-container {
-    margin: 0 auto;
-  }
-
-  .clients-description-text {
-    width: 85%;
-  }
-
   .clients-logo-container {
-    display: grid;
     grid-template-columns: auto auto;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    width: 90%;
   }
 
   .clients-logo-item {
@@ -2007,116 +1547,13 @@ footer {
 
   .price-grid {
     grid-template-columns: auto auto;
-    grid-gap: 10px;
   }
 
-  .price-grid-item {
-    margin-bottom: 20px;
-  }
-
-  .premium-img {
-    display: none;
-  }
-
-  .premium-list {
-    margin-left: auto;
-  }
-
-  .premium-flex {
-    padding-bottom: 10px;
-  }
-
-  .premium-btn {
-    width: 100%;
-  }
-
-  .premium-btn-container {
-    padding-bottom: 30px;
-  }
-
-  .facts-sub-header {
-    padding-bottom: 20px;
-  }
-
-  .facts-grid {
-    grid-template-columns: auto auto;
-    grid-gap: 20px;
-  }
-
-  .facts-grid-description {
-    margin-bottom: 30px;
-  }
-
-  .social-flex {
-    flex-direction: column;
-  }
-
-  .social-share {
-    justify-content: space-evenly;
-  }
-
-  .social-buttons {
-    margin-bottom: 5px;
-  }
-
-  .fa-share-alt {
-    line-height: 30px;
-  }
-
-  .social-btn {
-    margin-left: 10px;
-  }
-
-  .contact-sub-header {
-    padding-bottom: 30px;
-  }
-
-  .name-container {
-    flex-direction: column;
-    align-items: center;
-    padding-bottom: 0;
-  }
-
-  .contact-name,
-  .contact-email,
-  .contact-subject,
-  .contact-msg {
-    width: 90%;
-    margin: auto;
-    margin-bottom: 40px;
-  }
-
-  .contact-submit-btn {
-    width: 100%;
-  }
-
-  .map-address-container {
-    width: 95%;
-    margin: auto;
-  }
-
-  .footer-container {
-    grid-template-columns: auto;
-  }
-
-  .footer-newsteller-btn {
-    width: 100%;
+  .footer-newsteller {
+    padding: 30px;
   }
 
   .footer-text {
-    width: 95%;
-    margin: auto;
-  }
-
-  .footer-flex-social {
-    margin: auto;
-  }
-
-  .footer-copy-text {
-    text-align: center;
-  }
-
-  footer {
-    padding-top: 5px;
+    width: 90%;
   }
 }
