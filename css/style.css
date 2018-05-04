@@ -297,11 +297,11 @@ nav { background-color: black; height: 90px; }
 
 .contact-header { font-size: 30px; text-transform: uppercase; text-align: center; padding-top: 60px; margin-top: 0; }
 
-.contact-sub-header { font-size: 14px; color: #aeaeae; text-transform: uppercase; text-align: center; padding-bottom: 90px; }
+.contact-sub-header { font-size: 14px; color: #aeaeae; text-transform: uppercase; text-align: center; padding-bottom: 70px; }
 
 .name-container { display: -ms-flexbox; display: flex; -ms-flex-pack: center; justify-content: center; padding-bottom: 70px; }
 
-.message-container { display: -ms-flexbox; display: flex; -ms-flex-direction: column; flex-direction: column; -ms-flex-align: center; align-items: center; }
+.message-container { display: -ms-flexbox; display: flex; -ms-flex-direction: column; flex-direction: column; -ms-flex-pack: center; justify-content: center; -ms-flex-align: center; align-items: center; }
 
 .contact-btn-container { display: -ms-flexbox; display: flex; -ms-flex-pack: center; justify-content: center; }
 
@@ -315,7 +315,7 @@ nav { background-color: black; height: 90px; }
 
 .contact-email { border: none; border-bottom: 2px solid #bebebe; width: 255px; margin-left: 30px; background-color: #f0f0f0; }
 
-.contact-subject { border: none; border-bottom: 2px solid #bebebe; width: 540px; background-color: #f0f0f0; }
+.contact-subject { border: none; border-bottom: 2px solid #bebebe; width: 540px; margin-bottom: 110px; background-color: #f0f0f0; }
 
 .contact-msg { border: none; border-bottom: 2px solid #bebebe; width: 540px; margin-bottom: 52px; background-color: #f0f0f0; }
 
@@ -365,7 +365,7 @@ footer { background-color: black; padding-top: 32px; padding-bottom: 32px; }
 
 .fa-scroll-up { font-size: 48px; }
 
-@media (max-width: 1000px) { .menu-button-label { display: block; padding: 3px 15px; color: white; }
+@media (max-width: 1350px) { .menu-button-label { display: block; padding: 3px 15px; color: white; }
   .menu-button-input:not(:checked) ~ ul { display: none; }
   .menu-button-input:checked ~ ul { display: block; }
   .menu-list { margin: auto; -ms-flex-direction: column; flex-direction: column; -ms-flex-align: center; align-items: center; width: 100%; padding: 0; }
@@ -376,10 +376,8 @@ footer { background-color: black; padding-top: 32px; padding-bottom: 32px; }
   .hero-header { font-size: 30px; }
   .about-header-container { padding-bottom: 10px; }
   .about-paragraph { margin-bottom: 10px; }
-  .about-btn { margin-top: 5px; width: 100%; }
-  .video-text-container { -ms-flex-direction: column; flex-direction: column; }
-  .about-text-container { width: 100%; }
-  .about-video-container { width: 90%; margin-top: 20px; }
+  .about-btn { margin: 5px auto; }
+  .about-video-container { height: 25vh; }
   .services-grid { -ms-grid-columns: auto auto; grid-template-columns: auto auto; padding-top: 20px; }
   .services-grid-item { border-right: none; border-left: none; padding: 15px; margin-bottom: 20px; }
   .services-header, .projects-header, .team-header-container, .clients-header, .premium-header, .facts-header, .contact-header, .price-header { padding-top: 30px; }
@@ -388,22 +386,19 @@ footer { background-color: black; padding-top: 32px; padding-bottom: 32px; }
   .projects-menu { display: -ms-flexbox; display: flex; -ms-flex-align: center; align-items: center; width: 90%; margin: auto; }
   .projects-menu-item { margin-right: 10px; }
   .projects-menu-item > a { font-size: 12px; display: -ms-flexbox; display: flex; -ms-flex-direction: column; flex-direction: column; margin: auto; padding: 5px; }
-  .projects-gallery-grid { -ms-grid-columns: auto auto auto; grid-template-columns: auto auto auto; grid-gap: 15px; }
+  .projects-gallery-grid { -ms-grid-columns: auto auto auto auto; grid-template-columns: auto auto auto auto; grid-gap: 15px; }
   .projects-gallery-item { padding: 0; }
-  .projects-btn { width: 100%; }
   .projects-btn-container { padding-bottom: 30px; }
   .team-grid { -ms-grid-columns: auto auto; grid-template-columns: auto auto; grid-gap: 15px; }
   .team-grid-img { padding: 35px 60px; }
   .team-btn-container { margin: 0 auto; }
   .clients-description-text { width: 85%; }
-  .clients-logo-container { display: -ms-grid; display: grid; -ms-grid-columns: auto auto auto; grid-template-columns: auto auto auto; padding-top: 20px; padding-bottom: 20px; width: 90%; }
   .clients-logo-item { margin: 3px auto; }
-  .price-grid { -ms-grid-columns: auto auto; grid-template-columns: auto auto; grid-gap: 10px; }
+  .price-grid { -ms-grid-columns: auto auto auto auto; grid-template-columns: auto auto auto auto; grid-gap: 10px; }
   .price-grid-item { margin-bottom: 20px; }
   .premium-img { display: none; }
   .premium-list { margin-left: auto; }
   .premium-flex { padding-bottom: 10px; }
-  .premium-btn { width: 100%; }
   .premium-btn-container { padding-bottom: 30px; }
   .facts-sub-header { padding-bottom: 20px; }
   .facts-grid { -ms-grid-columns: auto auto; grid-template-columns: auto auto; grid-gap: 20px; }
@@ -416,10 +411,8 @@ footer { background-color: black; padding-top: 32px; padding-bottom: 32px; }
   .contact-sub-header { padding-bottom: 30px; }
   .name-container { -ms-flex-direction: column; flex-direction: column; -ms-flex-align: center; align-items: center; padding-bottom: 0; }
   .contact-name, .contact-email, .contact-subject, .contact-msg { width: 90%; margin: auto; margin-bottom: 40px; }
-  .contact-submit-btn { width: 100%; }
   .map-address-container { width: 95%; margin: auto; }
   .footer-container { -ms-grid-columns: auto; grid-template-columns: auto; }
-  .footer-newsteller-btn { width: 135%; }
   .footer-text { width: 95%; margin: auto; }
   .footer-flex-social { margin: auto; }
   .footer-copy-text { text-align: center; }
@@ -435,11 +428,11 @@ footer { background-color: black; padding-top: 32px; padding-bottom: 32px; }
   .topnav-container { display: -ms-flexbox; display: flex; }
   .hero-header { font-size: 30px; }
   .about-header-container { padding-bottom: 10px; }
-  .about-paragraph { margin-bottom: 10px; }
+  .about-paragraph { margin-bottom: 10px; width: 93%; margin: auto; }
   .about-btn { margin-top: 5px; width: 100%; }
   .video-text-container { -ms-flex-direction: column; flex-direction: column; }
   .about-text-container { width: 100%; }
-  .about-video-container { width: 90%; margin-top: 20px; }
+  .about-video-container { width: 90%; margin-top: 20px; height: 25vh; }
   .services-grid { -ms-grid-columns: auto auto; grid-template-columns: auto auto; padding-top: 20px; }
   .services-grid-item { border-right: none; border-left: none; padding: 15px; margin-bottom: 20px; }
   .services-header, .projects-header, .team-header-container, .clients-header, .premium-header, .facts-header, .contact-header, .price-header { padding-top: 30px; }
@@ -479,7 +472,7 @@ footer { background-color: black; padding-top: 32px; padding-bottom: 32px; }
   .contact-submit-btn { width: 100%; }
   .map-address-container { width: 95%; margin: auto; }
   .footer-container { -ms-grid-columns: auto; grid-template-columns: auto; }
-  .footer-newsteller-btn { width: 135%; }
+  .footer-newsteller-btn { width: 100%; }
   .footer-text { width: 95%; margin: auto; }
   .footer-flex-social { margin: auto; }
   .footer-copy-text { text-align: center; }
@@ -495,11 +488,11 @@ footer { background-color: black; padding-top: 32px; padding-bottom: 32px; }
   .topnav-container { display: -ms-flexbox; display: flex; }
   .hero-header { font-size: 30px; }
   .about-header-container { padding-bottom: 10px; }
-  .about-paragraph { margin-bottom: 10px; }
+  .about-paragraph { margin-bottom: 10px; width: 93%; margin: auto; }
   .about-btn { margin-top: 5px; width: 100%; }
   .video-text-container { -ms-flex-direction: column; flex-direction: column; }
   .about-text-container { width: 100%; }
-  .about-video-container { width: 90%; margin-top: 20px; }
+  .about-video-container { width: 90%; margin-top: 20px; height: 25vh; }
   .services-grid { -ms-grid-columns: auto auto; grid-template-columns: auto auto; padding-top: 20px; }
   .services-grid-item { border-right: none; border-left: none; padding: 15px; margin-bottom: 20px; }
   .services-header, .projects-header, .team-header-container, .clients-header, .premium-header, .facts-header, .contact-header, .price-header { padding-top: 30px; }
@@ -539,7 +532,7 @@ footer { background-color: black; padding-top: 32px; padding-bottom: 32px; }
   .contact-submit-btn { width: 100%; }
   .map-address-container { width: 95%; margin: auto; }
   .footer-container { -ms-grid-columns: auto; grid-template-columns: auto; }
-  .footer-newsteller-btn { width: 135%; }
+  .footer-newsteller-btn { width: 100%; }
   .footer-text { width: 95%; margin: auto; }
   .footer-flex-social { margin: auto; }
   .footer-copy-text { text-align: center; }
