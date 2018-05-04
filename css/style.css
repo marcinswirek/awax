@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat|PT+Sans|Quicksand");
-* { box-sizing: border-box; border: 0.21px solid red; }
+* { box-sizing: border-box; }
 
 body { font-family: "Montserrat", sans-serif; margin: 0 auto; }
 
@@ -378,8 +378,6 @@ footer { background-color: black; padding-top: 32px; padding-bottom: 32px; }
   .about-paragraph { margin-bottom: 10px; }
   .about-btn { margin: 5px auto; }
   .about-video-container { height: 25vh; }
-  .services-grid { -ms-grid-columns: auto auto; grid-template-columns: auto auto; padding-top: 20px; }
-  .services-grid-item { border-right: none; border-left: none; padding: 15px; margin-bottom: 20px; }
   .services-header, .projects-header, .team-header-container, .clients-header, .premium-header, .facts-header, .contact-header, .price-header { padding-top: 30px; }
   .team-carousel-circles, .clients-carousel-circles, .premium-carousel-circles { padding-top: 20px; padding-bottom: 20px; }
   .projects-menu-list { display: -ms-grid; display: grid; -ms-grid-columns: auto auto auto; grid-template-columns: auto auto auto; grid-gap: 5px; margin: auto; padding: 0; width: 100%; }

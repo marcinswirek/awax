@@ -64,7 +64,7 @@ $grid-col-4: auto auto auto auto;
 
 * {
   box-sizing: border-box;
-  border: 0.21px solid red;
+  //border: 0.21px solid red;
 }
 
 body {
@@ -1276,17 +1276,17 @@ footer {
   //     margin-top: 20px;
   //   }
 
-  .services-grid {
-    grid-template-columns: auto auto;
-    padding-top: 20px;
-  }
+//   .services-grid {
+//     grid-template-columns: auto auto;
+//     padding-top: 20px;
+//   }
 
-  .services-grid-item {
-    border-right: none;
-    border-left: none;
-    padding: 15px;
-    margin-bottom: 20px;
-  }
+//   .services-grid-item {
+//     border-right: none;
+//     border-left: none;
+//     padding: 15px;
+//     margin-bottom: 20px;
+//   }
 
   .services-header,
   .projects-header,
