@@ -63,7 +63,7 @@ $grid-col-4: auto auto auto auto;
 
 * {
   box-sizing: border-box;
-  //border: 0.21px solid red;
+  border: 0.21px solid red;
 }
 
 body {
@@ -255,6 +255,7 @@ nav {
 
 .about-btn {
   @include btn-norm();
+  margin: auto;
   margin-top: 34px;
 }
 
@@ -759,6 +760,10 @@ nav {
   border-bottom: 1px solid $grey;
 }
 
+.far {
+    margin-left: 10px;
+}
+
 .premium-header {
   text-align: center;
   font-size: $font-size-xl;
@@ -1182,10 +1187,6 @@ footer {
     padding: 0;
   }
 
-//   .nav-logo {
-//     display: none;
-//   }
-
   .hero-header {
     font-size: $font-size-xl;
   }
@@ -1198,8 +1199,14 @@ footer {
     margin-bottom: 10px;
   }
 
+  .about-text-container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+  }
+
   .about-btn {
-    margin: 5px auto;
+    margin: 10px auto;
   }
 
   .about-video-container {
@@ -1329,10 +1336,18 @@ footer {
 
   .social-share {
     justify-content: space-evenly;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  .social-btn {
+    width: 40px;
+    height: 40px;
   }
 
   .social-buttons {
     margin-bottom: 5px;
+    display: flex;
   }
 
   .fa-share-alt {
@@ -1395,7 +1410,7 @@ footer {
     nav {
         height: 100%;
     }
-    
+
   .menu-button-label {
     float: right;
     display: block;
@@ -1467,7 +1482,7 @@ footer {
 
   .about-btn {
     margin-top: 5px;
-    width: 100%;
+    width: 80%;
   }
 
   .video-text-container {
@@ -1500,7 +1515,7 @@ footer {
   }
 
   .projects-btn {
-    width: 100%;
+    width: 80%;
   }
 
   .team-grid {
@@ -1524,11 +1539,11 @@ footer {
   }
 
   .premium-btn {
-    width: 100%;
+    width: 80%;
   }
 
   .contact-submit-btn {
-    width: 100%;
+    width: 80%;
   }
 
   .map-address-container {
@@ -1536,7 +1551,7 @@ footer {
   }
 
   .footer-newsteller-btn {
-    width: 100%;
+    width: 90%;
   }
 }
 
