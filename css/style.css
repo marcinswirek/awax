@@ -13,6 +13,8 @@ body { font-family: "Montserrat", sans-serif; margin: 0 auto; }
 
 nav { background-color: black; height: 90px; }
 
+.logo-rwd { display: none; }
+
 .nav-menu { display: -ms-flexbox; display: flex; -ms-flex-align: center; align-items: center; -ms-flex-pack: justify; justify-content: space-between; }
 
 .menu-list { display: -ms-flexbox; display: flex; list-style-type: none; font-size: 14px; text-transform: uppercase; font-weight: 700; }
@@ -366,7 +368,6 @@ footer { background-color: black; padding-top: 32px; padding-bottom: 32px; }
 .fa-scroll-up { font-size: 48px; }
 
 @media (max-width: 1150px) { .menu-list { font-size: 12px; padding: 0; }
-  .nav-logo { display: none; }
   .hero-header { font-size: 30px; }
   .about-header-container { padding-bottom: 10px; }
   .about-paragraph { margin-bottom: 10px; }
@@ -410,7 +411,10 @@ footer { background-color: black; padding-top: 32px; padding-bottom: 32px; }
   .footer-copy-text { text-align: center; }
   footer { padding-top: 5px; } }
 
-@media (max-width: 790px) { .menu-button-label { float: right; display: block; padding: 3px 15px; color: white; }
+@media (max-width: 840px) { nav { height: 100%; }
+  .menu-button-label { float: right; display: block; padding: 3px 15px; color: white; }
+  .nav-logo { display: none; }
+  .logo-rwd { display: block; text-align: center; }
   .menu-button-input:not(:checked) ~ ul { display: none; }
   .menu-button-input:checked ~ ul { display: block; }
   .menu-list { margin: auto; -ms-flex-direction: column; flex-direction: column; -ms-flex-align: center; align-items: center; width: 30%; padding: 0; }

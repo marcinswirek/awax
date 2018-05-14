@@ -89,6 +89,10 @@ nav {
   height: 90px;
 }
 
+.logo-rwd {
+    display: none;
+}
+
 .nav-menu {
   display: flex;
   align-items: center;
@@ -1178,9 +1182,9 @@ footer {
     padding: 0;
   }
 
-  .nav-logo {
-    display: none;
-  }
+//   .nav-logo {
+//     display: none;
+//   }
 
   .hero-header {
     font-size: $font-size-xl;
@@ -1385,14 +1389,27 @@ footer {
   }
 }
 
-//Max 790px//////////////////////////////////////////////////
+//Max 840px//////////////////////////////////////////////////
 
-@media (max-width: 790px) {
+@media (max-width: 840px) {
+    nav {
+        height: 100%;
+    }
+    
   .menu-button-label {
     float: right;
     display: block;
     padding: 3px 15px;
     color: $white;
+  }
+
+  .nav-logo {
+      display: none;
+  }
+
+  .logo-rwd {
+      display: block;
+      text-align: center;
   }
 
   .menu-button-input:not(:checked) ~ ul {
