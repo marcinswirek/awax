@@ -157,11 +157,11 @@ nav {
   margin: 0 auto;
 }
 
-.hero-header-one {
+.hero-header-white {
   color: $white;
 }
 
-.hero-header-two {
+.hero-header-gold {
   color: $brown;
 }
 
@@ -182,7 +182,7 @@ nav {
   margin: 8px;
 }
 
-.carousel-circle-active {
+.is-active {
   background-color: $brown;
 }
 
@@ -787,7 +787,6 @@ nav {
 }
 
 .premium-sub-list {
-  margin-left: 60px;
   line-height: 30px;
   text-transform: uppercase;
 }

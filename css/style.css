@@ -27,9 +27,9 @@ nav { background-color: black; height: 90px; }
 
 .hero-header { font-size: 72px; text-transform: uppercase; font-weight: bold; margin: 0 auto; }
 
-.hero-header-one { color: white; }
+.hero-header-white { color: white; }
 
-.hero-header-two { color: #b88b58; }
+.hero-header-gold { color: #b88b58; }
 
 .hero-phone { color: white; font-size: 24px; }
 
@@ -39,7 +39,7 @@ nav { background-color: black; height: 90px; }
 
 .hero-carousel-circle { width: 15px; height: 15px; border-radius: 50%; border: 3px solid #b88b58; margin: 8px; }
 
-.carousel-circle-active { background-color: #b88b58; }
+.is-active { background-color: #b88b58; }
 
 .hero-carousel-circles { display: -ms-flexbox; display: flex; position: absolute; bottom: 4vh; }
 
@@ -239,7 +239,7 @@ nav { background-color: black; height: 90px; }
 
 .premium-list-text { margin-left: 60px; line-height: 30px; }
 
-.premium-sub-list { margin-left: 60px; line-height: 30px; text-transform: uppercase; }
+.premium-sub-list { line-height: 30px; text-transform: uppercase; }
 
 .premium-carousel-circles { display: -ms-flexbox; display: flex; -ms-flex-pack: center; justify-content: center; padding: 40px 0; }
 
