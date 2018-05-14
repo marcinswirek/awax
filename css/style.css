@@ -3,6 +3,12 @@
 
 body { font-family: "Montserrat", sans-serif; margin: 0 auto; }
 
+::-webkit-input-placeholder { color: #aeaeae; font-size: 14px; text-align: center; }
+
+:-ms-input-placeholder { color: #aeaeae; font-size: 14px; text-align: center; }
+
+::placeholder { color: #aeaeae; font-size: 14px; text-align: center; }
+
 .container { max-width: 1100px; margin: 0 auto; }
 
 nav { background-color: black; height: 90px; }
@@ -117,7 +123,7 @@ nav { background-color: black; height: 90px; }
 
 .projects-gallery-item:hover { -webkit-filter: brightness(50%); filter: brightness(50%); cursor: pointer; }
 
-.projects-gallery-item:hover .projects-gallery-layer { visibility: visible; cursor: pointer; }
+.projects-gallery-item:hover > .projects-gallery-layer { visibility: visible; cursor: pointer; }
 
 .gallery-item-1 { background-image: url("/images/img1.jpg"); }
 
@@ -304,12 +310,6 @@ nav { background-color: black; height: 90px; }
 .message-container { display: -ms-flexbox; display: flex; -ms-flex-direction: column; flex-direction: column; -ms-flex-pack: center; justify-content: center; -ms-flex-align: center; align-items: center; }
 
 .contact-btn-container { display: -ms-flexbox; display: flex; -ms-flex-pack: center; justify-content: center; }
-
-::-webkit-input-placeholder { color: #aeaeae; font-size: 14px; text-align: center; }
-
-:-ms-input-placeholder { color: #aeaeae; font-size: 14px; text-align: center; }
-
-::placeholder { color: #aeaeae; font-size: 14px; text-align: center; }
 
 .contact-name { border: none; border-bottom: 2px solid #bebebe; width: 255px; background-color: #f0f0f0; }
 

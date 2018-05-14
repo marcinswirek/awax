@@ -71,6 +71,12 @@ body {
   margin: 0 auto;
 }
 
+::placeholder {
+    color: $light-grey;
+    font-size: $font-size-s;
+    text-align: center;
+  }
+
 .container {
   max-width: 1100px;
   margin: 0 auto;
@@ -203,7 +209,7 @@ nav {
   position: fixed;
   right: 20px;
   bottom: 20px;
-  box-shadow: 0 0 20px black;
+  box-shadow: 0 0 20px $black;
 }
 
 .fa-phone-hero {
@@ -261,7 +267,7 @@ nav {
   display: flex;
   justify-content: center;
   align-items: center;
-  box-shadow: 0 0 20px black;
+  box-shadow: 0 0 20px $black;
   margin: 0 auto;
 }
 
@@ -420,11 +426,9 @@ nav {
   &:hover {
     filter: brightness(50%);
     cursor: pointer;
-  }
-  &:hover {
-    .projects-gallery-layer {
-      visibility: visible;
-      cursor: pointer;
+    > .projects-gallery-layer {
+        visibility: visible;
+        cursor: pointer;   
     }
   }
 }
@@ -987,12 +991,6 @@ nav {
 .contact-btn-container {
   display: flex;
   justify-content: center;
-}
-
-::placeholder {
-  color: $light-grey;
-  font-size: $font-size-s;
-  text-align: center;
 }
 
 .contact-name {
