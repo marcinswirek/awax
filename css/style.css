@@ -21,11 +21,11 @@ nav { background-color: black; height: 90px; }
 
 .menu-item { margin-left: 15px; margin-top: 25px; text-align: center; }
 
-.menu-item:after { content: ""; border: 5px solid #b88b58; display: inline-block; vertical-align: bottom; width: 85%; margin-top: 22px; visibility: hidden; }
+.menu-item::after { content: ""; border: 5px solid #b88b58; display: inline-block; vertical-align: bottom; width: 85%; margin-top: 22px; visibility: hidden; }
 
 .menu-item:hover { cursor: pointer; }
 
-.menu-item:hover:after { visibility: visible; }
+.menu-item:hover::after { visibility: visible; }
 
 .menu-item > a { text-decoration: none; color: white; }
 
@@ -117,9 +117,9 @@ nav { background-color: black; height: 90px; }
 
 .projects-menu-item > a { text-decoration: none; color: black; text-transform: uppercase; font-size: 14px; line-height: 50px; text-align: center; }
 
-.projects-menu-item > a:after { content: ""; border: 3px solid #b88b58; display: block; visibility: hidden; }
+.projects-menu-item > a::after { content: ""; border: 3px solid #b88b58; display: block; visibility: hidden; }
 
-.projects-menu-item > a:hover:after { visibility: visible; }
+.projects-menu-item > a:hover::after { visibility: visible; }
 
 .projects-menu { display: -ms-flexbox; display: flex; -ms-flex-pack: center; justify-content: center; padding-top: 54px; padding-bottom: 38px; }
 
@@ -233,7 +233,7 @@ nav { background-color: black; height: 90px; }
 
 .price-item-offer { font-size: 10px; color: #373737; margin-bottom: 5px; margin-top: 5px; }
 
-.price-item-offer:after { content: ""; border: 1px solid #373737; display: block; width: 10px; margin: 5px auto 0px auto; }
+.price-item-offer::after { content: ""; border: 1px solid #373737; display: block; width: 10px; margin: 5px auto 0px auto; }
 
 .price-item-btn { width: 129px; height: 45px; background-color: #242424; border: none; border-radius: 25px; color: white; font-weight: 700; font-size: 12px; text-transform: uppercase; transition: all 0.4s linear; margin-bottom: 33px; margin-top: 28px; }
 
@@ -275,7 +275,7 @@ nav { background-color: black; height: 90px; }
 
 .facts-grid-number { font-size: 48px; color: #b88b58; font-weight: 900; margin-top: 0; margin-bottom: 10px; }
 
-.facts-grid-number:after { content: ""; border: 2px solid #7e7e7e; display: block; width: 25px; margin: 10px auto 0px auto; }
+.facts-grid-number::after { content: ""; border: 2px solid #7e7e7e; display: block; width: 25px; margin: 10px auto 0px auto; }
 
 .facts-grid-header { font-size: 18px; color: white; text-transform: uppercase; margin: auto; margin-top: 20px; text-align: center; }
 
@@ -427,7 +427,7 @@ footer { background-color: black; padding-top: 32px; padding-bottom: 32px; }
   .menu-button-input:checked ~ ul { display: block; }
   .menu-list { margin: auto; -ms-flex-direction: column; flex-direction: column; -ms-flex-align: center; align-items: center; width: 30%; padding: 0; }
   .menu-item { background-color: black; opacity: 0.8; z-index: 999; display: -ms-flexbox; display: flex; -ms-flex-direction: column; flex-direction: column; width: 100%; line-height: 44px; margin: auto; }
-  .menu-item:after { width: 95%; margin: auto; }
+  .menu-item::after { width: 95%; margin: auto; }
   .nav-menu { display: -ms-flexbox; display: flex; -ms-flex-direction: column; flex-direction: column; } }
 
 @media (max-width: 650px) { .menu-list { width: 100%; }
