@@ -440,6 +440,7 @@ footer { background-color: black; padding-top: 32px; padding-bottom: 32px; }
   .services-grid { -ms-grid-columns: auto auto; grid-template-columns: auto auto; padding-top: 20px; }
   .services-grid-item { border-right: none; border-left: none; padding: 15px; margin-bottom: 20px; }
   .projects-gallery-grid { -ms-grid-columns: auto auto; grid-template-columns: auto auto; }
+  .projects-gallery-layer { width: 50%; margin: 0 auto; }
   .projects-btn { width: 80%; }
   .team-grid { -ms-grid-columns: auto; grid-template-columns: auto; }
   .clients-logo-container { display: -ms-grid; display: grid; -ms-grid-columns: auto auto auto; grid-template-columns: auto auto auto; padding-top: 20px; padding-bottom: 20px; width: 90%; }
@@ -457,3 +458,4 @@ footer { background-color: black; padding-top: 32px; padding-bottom: 32px; }
   .price-grid { -ms-grid-columns: auto auto; grid-template-columns: auto auto; }
   .footer-newsteller { padding: 30px; }
   .footer-text { width: 90%; } }
+/*# sourceMappingURL=style.css.map */
