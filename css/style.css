@@ -369,7 +369,9 @@ footer { background-color: black; padding-top: 32px; padding-bottom: 32px; }
 
 .footer-newsteller-email { border: none; border-bottom: 2px solid #bebebe; width: 220px; background-color: #373737; text-transform: uppercase; }
 
-.footer-scroll-btn { height: 65px; width: 65px; border: none; border-radius: 50%; background-color: #b88b58; color: white; box-shadow: 0 0 20px black; position: relative; top: -6vh; left: 4vw; }
+.footer-scroll-btn { height: 65px; width: 65px; border: none; border-radius: 50%; background-color: #b88b58; color: white; box-shadow: 0 0 20px black; position: fixed; bottom: 20px; left: 20px; transition: 0.4s all linear; }
+
+.footer-scroll-btn:hover { cursor: pointer; transform: scale(1.05); box-shadow: 0 0 10px black; }
 
 .fa-scroll-up { font-size: 48px; }
 

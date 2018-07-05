@@ -1170,9 +1170,16 @@ footer {
   background-color: $brown;
   color: $white;
   box-shadow: 0 0 20px $black;
-  position: relative;
-  top: -6vh;
-  left: 4vw;
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  transition: 0.4s all linear;
+
+  &:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+    box-shadow: 0 0 10px $black;
+  }
 }
 
 .fa-scroll-up {
