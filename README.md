@@ -1,3 +1,2 @@
 # awax
-
-https://swirek-marcin.github.io/awax
+http://www.awax.dev-tricks.pl/
